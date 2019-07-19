@@ -1,0 +1,1169 @@
+/* main.cpp */
+"An unexpected error occurred." = "예기치 않은 오류가 발생했습니다."
+
+
+/* connectupdater.cpp */
+"Updates are not available for this Operating System" = "이 운영 체제의 업데이트를 사용할 수 없습니다."
+"Installer failed to start" = "설치 프로그램을 시작하지 못했습니다."
+
+
+/* linuxconnectpreferenceswindow.cpp */
+"Preferences - %s" = "환경 설정 - %s"
+"Preferences contains errors:\n" = "환경 설정에 다음 오류가 포함되어 있습니다.\n"
+"\n\nDo you want to revert changes?" = "\n\n변경사항을 되돌리시겠습니까?"
+"General" = "일반"
+"Transfers" = "전송"
+"Network" = "네트워크"
+"Bandwidth" = "대역폭"
+"Security" = "보안"
+
+
+/* securityviewcontroller.mm */
+"Are you sure you want to remove the selected host?" = "선택한 호스트를 제거하시겠습니까?"
+"Are you sure you want to remove all the hosts?" = "모든 호스트를 제거하시겠습니까?"
+"Are you sure you want to remove the credential?" = "신임 정보를 제거하시겠습니까?"
+"Are you sure you want to remove all credentials?" = "모든 신임 정보를 제거하시겠습니까?"
+"Format not acceptable. Wildcard is only for the leftmost element of a fully qualified domain name.\neg. *.example.com." = "형식을 허용할 수 없습니다. 와일드카드는 완전한 도메인 이름의 가장 왼쪽 요소에만 사용됩니다. \n예. *.example.com."
+"Format not acceptable. '/' is only for specifying IP subnet ranges.\neg. 10.1.0.0/16." = "형식을 허용할 수 없습니다. '/'는 IP 서브넷 범위를 지정하는 데만 사용됩니다. \n예. 10.1.0.0/16."
+"Trusted Hosts" = "신뢰할 수 있는 호스트"
+"Restricted Hosts" = "제한된 호스트"
+"Passwords" = "비밀번호"
+"Content Protection" = "컨텐츠 보호"
+"Trusted hosts are hosts to which you have granted permission to always allow transfers.  If any attempt is made to start a transfer with a host that is not on this list, you will be given the option to allow or deny the transfer." = "신뢰할 수 있는 호스트는 사용자가 언제나 전송할 수 있도록 권한을 부여한 호스트입니다.  이 목록에 없는 호스트를 사용하여 전송을 시작하려고 하면 전송을 허용하거나 거부하는 옵션이 제공됩니다."
+"Address:" = "주소:"
+"Add" = "추가"
+"Remove" = "제거"
+"Remove All" = "모두 제거"
+"Host" = "호스트"
+"Restricted hosts are hosts for which you have enabled enhanced security.  If any attempt is made to start a transfer with a host that is on this list, you will be presented with a warning before it can proceed." = "제한된 호스트는 강화된 보안을 사용한 호스트입니다.  이 목록에 있는 호스트를 사용하여 전송을 시작하려고 하면 진행하기 전에 경고가 표시됩니다."
+"Login information has been saved for the following hosts:" = "다음 호스트의 로그인 정보가 저장됩니다."
+"User" = "사용자"
+"Content protection allows you to leave files encrypted on servers to which they have been uploaded.  Enter a list of hosts for which you want to enable this functionality." = "컨텐츠 보호를 사용하면 파일이 업로드된 서버에서 파일을 암호화한 상태로 유지할 수 있습니다.  이 기능을 사용하도록 설정할 호스트 목록을 입력하십시오."
+
+
+/* winconnectpreferenceswindow.cpp */
+"OK" = "확인"
+"Apply" = "적용"
+"Cancel" = "취소"
+
+
+/* accountmanager.cpp */
+"Could not save account. %s" = "계정을 저장할 수 없습니다. %s"
+"Account is missing an ID." = "계정에 ID가 누락되어 있습니다."
+"Host is empty." = "호스트가 비어 있습니다."
+"No authentication type specified." = "인증 유형이 지정되지 않았습니다."
+"User field is empty." = "사용자 필드가 비어 있습니다."
+"Password field is empty." = "비밀번호 필드가 비어 있습니다."
+"Missing token." = "토큰이 누락되었습니다."
+"Max threads reached." = "최대 스레드 수에 도달했습니다."
+"Account has been deleted." = "계정이 삭제되었습니다."
+"No services discovered." = "서비스가 검색되지 않았습니다."
+"Couldn't resolve host name." = "호스트 이름을 분석할 수 없습니다."
+"Couldn't connect to server." = "서버에 연결할 수 없습니다."
+"Invalid credentials." = "신임 정보가 올바르지 않습니다."
+"Your password has expired. Please reset your password and try again." = "비밀번호가 만료되었습니다. 비밀번호를 재설정하고 다시 시도하십시오."
+"Service discovery failed. No services discovered for host: %s" = "서비스 검색에 실패했습니다. 호스트에 대해 검색된 서비스가 없습니다. %s"
+"Storage validation failed." = "스토리지 유효성 검증에 실패했습니다."
+"This server does not have node services for storage testing." = "이 서버에는 스토리지 테스트에 사용하는 노드 서비스가 없습니다."
+"This server requires a valid storage configuration." = "이 서버에는 올바른 스토리지 구성이 필요합니다."
+"The server returned the following error:" = "서버에서 다음 오류를 리턴했습니다."
+
+
+/* application.cpp */
+"%1$s stopped. You are running very low on disk space on (%2$s)." = "%1$s이(가) 중지되었습니다. (%2$s)의 디스크 공간이 매우 부족합니다."
+"%1$s. And %2$llu%% disk space remaining for download to %3$s." = "%1$s. %3$s에 다운로드할 수 있는 %2$llu%% 디스크 공간이 남아 있습니다."
+"%1$s. And %2$llu%% disk space remaining for sync to %3$s." = "%1$s. %3$s에 동기화할 수 있는 %2$llu%% 디스크 공간이 남아 있습니다."
+"Accounts: " = "계정: "
+"%s Name is already taken." = "%s 이름이 이미 사용되었습니다."
+
+
+/* exception.cpp */
+"An instance of the application is already running." = "애플리케이션의 인스턴스가 이미 실행 중입니다."
+"Invalid input." = "올바르지 않은 입력입니다."
+"Failed to parse XML." = "XML을 구문 분석하지 못했습니다."
+"This system has reached the maximum number of Connect instances running allowed, probably under multiple user IDs. Some will have to be closed before this transfer can succeed." = "이 시스템이 여러 사용자 ID를 사용하여 실행하도록 허용된 최대 연결 인스턴스 수에 도달했습니다. 일부 인스턴스를 종료해야 이 전송에 성공할 수 있습니다."
+"Pointer is NULL." = "포인터가 널(null)입니다."
+"Unexpected value found." = "예기치 않은 값이 있습니다."
+"Not implemented." = "구현되지 않았습니다."
+"Json parse error." = "Json 구문 분석 오류입니다."
+"Json serialization failed." = "Json 직렬화에 실패했습니다."
+"Sql execution error." = "Sql 실행 오류입니다."
+"Verification of properties failed." = "특성을 검증하지 못했습니다."
+"HTTP error" = "HTTP 오류"
+"User cancelled first run." = "사용자가 첫 번째 실행을 취소했습니다."
+"Configuration file parsed successfully." = "구성 파일을 구분 분석했습니다."
+"Error parsing configuration file." = "구성 파일을 구문 분석하는 중에 오류가 발생했습니다."
+"Failed to parse application arguments." = "애플리케이션 인수를 구문 분석하지 못했습니다."
+
+
+/* externaltransfer.cpp */
+"External transfer failed to update before timeout." = "제한시간 초과 전에 외부 전송을 통해 업데이트하지 못했습니다."
+
+
+/* faspexinboxtask.cpp */
+"Inbox" = "작업함"
+"Account \"%s\" may not have permission to download packages." = "\"%s\" 계정이 패키지를 다운로드할 권한이 없습니다."
+"User name or password not accepted, please check credentials and restart this Inbox." = "사용자 이름 또는 비밀번호가 허용되지 않습니다. 신임 정보를 확인하고 이 작업함을 다시 시작하십시오."
+"Could not start automatic checking for packages." = "패키지 자동 검사를 시작할 수 없습니다."
+
+
+/* filesfeedprocessor.cpp */
+"Workspace query returned NULL" = "작업공간 조회에서 널(null)을 리턴했습니다."
+"Packages query returned null." = "패키지 조회에서 널(null)을 리턴했습니다."
+
+
+/* nodeapi.cpp */
+"Node V2 URL not found." = "노드 V2 URL을 찾을 수 없습니다."
+
+
+/* nodefileinfogatherer.cpp */
+"Node not syncable" = "노드를 동기화할 수 없음"
+"Node Api returns non-syncable." = "노드 Api에서 동기화할 수 없음을 리턴합니다."
+"Duplicated folder name: " = "중복된 폴더 이름: "
+". Please check your Files workspace and rename one of the folders." = ". 파일 작업공간을 확인하고 폴더 중 하나의 이름을 바꾸십시오."
+" code" = " 코드"
+
+
+/* nodefilesystemmodel.cpp */
+"upload only" = "업로드만"
+"download only" = "다운로드만"
+"no permissions" = "권한이 없음"
+
+
+/* nodetransferworker.cpp */
+"Resource not found. Cannot start transfer." = "자원을 찾을 수 없습니다. 전송을 시작할 수 없습니다."
+
+
+/* ssoadapter.cpp */
+"Failed to communicate with the host." = "호스트와 통신하지 못했습니다."
+
+
+/* setupworker.cpp */
+"remote directory" = "원격 디렉토리"
+"remote directory: %s" = "원격 디렉토리: %s"
+"Permission denied to upload to %s" = "%s에 업로드하는 권한이 거부됨"
+"The folder: %s is no longer available. Go to the Drive \"Sync Settings\" dialog and select a different remote folder" = "%s 폴더는 더 이상 사용할 수 없습니다. 드라이브 \"동기화 설정\" 대화 상자로 이동하여 다른 원격 폴더를 선택하십시오."
+"The folder %s is no longer available. Go to Aspera on Cloud and resolve the errors." = "%s 폴더는 더 이상 사용할 수 없습니다. Aspera on Cloud로 이동하여 오류를 해결하십시오."
+
+
+/* startspec.cpp */
+"remote selection" = "원격 선택"
+
+
+/* syncerror.cpp */
+"No error" = "오류 없음"
+"Invalid Sync parameters" = "올바르지 않은 동기화 매개변수"
+"Connection failed" = "연결 실패"
+"Error communicating with server" = "서버와 통신 중 오류 발생"
+"Your user name or password is incorrect" = "사용자 이름 또는 비밀번호가 올바르지 않음"
+"No remote directories selected" = "원격 디렉토리가 선택되지 않음"
+"Failed to send data" = "데이터 전송 실패"
+"Sync error" = "동기화 오류"
+"Sync engine error" = "동기화 엔진 오류"
+"Remote path is not a directory" = "원격 경로가 디렉토리가 아님"
+"Permission denied to sync with remote folder" = "원격 폴더와 동기화하는 권한이 거부됨"
+"Sync session error" = "동기화 세션 오류"
+"Sync session failed to start" = "동기화 세션을 시작하는 데 실패"
+"Authentication failed" = "인증 실패"
+"Failed to initialize the Sync module" = "동기화 모듈을 초기화하는 데 실패"
+"Failed to configure Sync session" = "동기화 세션을 구성하는 데 실패"
+"Failed to start Sync session" = "동기화 세션을 시작하는 데 실패"
+"Failed to stop Sync session" = "동기화 세션을 중지하는 데 실패"
+"Waiting for previous Sync session to end" = "이전 동기화 세션이 종료될 때까지 대기"
+"Sync tasks stopped. You are running very low on disk space." = "동기화 태스크가 중지되었습니다. 디스크 공간이 매우 부족합니다."
+"code" = "코드"
+
+
+/* syncqueuemanager.cpp */
+"Local directory is not specified" = "로컬 디렉토리가 지정되지 않음"
+
+
+/* syncstats.cpp */
+"Error" = "오류"
+"Idle" = "유휴"
+"Paused" = "일시정지됨"
+"Stopped" = "중지됨"
+"Running" = "실행 중"
+
+
+/* taskstaterunning.cpp */
+"Sync error: %s. Sync has been disabled" = "동기화 오류: %s. 동기화를 사용하지 않습니다."
+
+
+/* transfer.cpp */
+"Authentication failed.  Host is empty." = "인증에 실패했습니다.  호스트가 비어 있습니다."
+"User is empty." = "사용자가 비어 있습니다."
+"Destination root not allowed. %s" = "대상 루트가 허용되지 않습니다. %s"
+"Source root not allowed. %s" = "소스 루트가 허용되지 않습니다. %s"
+"Source path not allowed: %s" = "소스 경로가 허용되지 않습니다. %s"
+"Destination path not allowed: %s" = "대상 경로가 허용되지 않습니다. %s"
+"Error: " = "오류: "
+"Disk write failed" = "디스크 쓰기 실패"
+"Ensure the server file still exists and is accessible." = "서버 파일이 여전히 있으며 액세스 가능한지 확인하십시오."
+"Error: Authentication failed." = "오류: 인증에 실패했습니다."
+"The ascp executable is missing. Repair your Connect or Drive installation." = "ascp 실행 파일이 누락되었습니다. 연결 또는 드라이브 설치를 복구하십시오."
+"Error: Session data transfer timeout (server)." = "오류: 세션 데이터 전송 제한시간이 초과되었습니다(서버)."
+"Error: Communication problem, ensure both client and server are connected to the network." = "오류: 통신 문제점이 있습니다. 클라이언트와 서버가 둘 다 네트워크에 연결되어 있는지 확인하십시오."
+"Error: Ensure that a valid fasp proxy address is set." = "오류: 올바른 fasp 프록시 주소가 설정되었는지 확인하십시오."
+"Error: FASP process failed to initialize." = "오류: FASP 프로세스를 초기화하지 못했습니다."
+"Error: Session failed to connect to the remote server." = "오류: 세션이 원격 서버에 연결하지 못했습니다."
+
+
+/* transfermanager.cpp */
+"The destination already has an item with the same file name. Continue?" = "대상에 파일 이름이 같은 항목이 이미 있습니다. 계속하시겠습니까?"
+
+
+/* transferproperties.cpp */
+"Input is not a fasp url: %s" = "%s 입력은 fasp url이 아닙니다."
+"Could not create fasp url from: %s" = "%s에서 fasp url을 작성할 수 없습니다."
+"Could not create fasp url from destination: %s" = "대상 %s에서 fasp url을 작성할 수 없습니다."
+
+
+/* transferworker.cpp */
+"Error creating ascp arguments" = "ascp 인수 작성 중 오류 발생"
+"FASP management terminated unexpectedly." = "FASP 관리가 예기치 않게 종료되었습니다."
+"FASP process failed to start. Check ascp binary." = "FASP 프로세스 시작에 실패하였습니다. ascp 2진을 확인하십시오."
+"FASP process crashed." = "FASP 프로세스가 충돌했습니다."
+"FASP process timed out." = "FASP 프로세스의 제한시간이 초과되었습니다."
+"FASP process write error." = "FASP 프로세스 쓰기 오류입니다."
+"FASP process read error." = "FASP 프로세스 읽기 오류입니다."
+"FASP process failed to start." = "FASP 프로세스를 시작하지 못했습니다."
+"FASP process failed to initialize." = "FASP 프로세스를 초기화하지 못했습니다."
+"File error" = "파일 오류"
+
+
+/* updater.cpp */
+"Failed to communicate with the update server" = "업데이트 서버와의 통신에 실패했습니다."
+"Update server returned invalid data." = "업데이트 서버에서 올바르지 않은 데이터를 리턴했습니다."
+
+
+/* humanstring.cpp */
+"at %s" = "%s에"
+"Yesterday" = "어제"
+"yesterday" = "어제"
+"on %s" = "%s에서"
+
+
+/* utils_helpers.cpp */
+"GetVolumePathName of %1$s failed: %2$ld" = "%1$s의 GetVolumePathName 실패: %2$ld"
+"Error encrypting data" = "데이터를 암호화하는 중 오류 발생"
+"Error decrypting data" = "데이터를 복호화하는 중 오류 발생"
+
+
+/* utils.cpp */
+"\n%sName is empty." = "\n%s이름이 비어 있습니다."
+"\n%sName cannot contain these characters: \\ / * ? : \" < > |" = "\n%s이름에는 다음 문자를 사용할 수 없습니다. \\ / * ? : \" < > |"
+"\n%1$sName is greater than max length: %2$d" = "\n%1$s이름이 최대 길이인 %2$d보다 큽니다."
+"\n%sServer address is empty." = "\n%s서버 주소가 비어 있습니다."
+"\n%sServer address is invalid." = "\n%s서버 주소가 올바르지 않습니다."
+"\n%sUser name is empty." = "\n%s사용자 이름이 비어 있습니다."
+"\n%sPassword is empty." = "\n%s비밀번호가 비어 있습니다."
+"\n%sStorage path for Azure can not be empty or \"/\"." = "\n%sAzure의 스토리지 경로는 비어 있거나 \"/\"일 수 없습니다."
+"Shared access signature must have either Read-List permissions or Read-Write-Delete-List permissions." = "공유 액세스 서명에 읽기-나열 권한이 있거나 읽기-쓰기-삭제-나열 권한이 있어야 합니다."
+
+
+/* aboutwindow.cpp */
+"About - %s" = "정보 - %s"
+"Internal (%s)" = "내부(%s)"
+"Release (%s)" = "릴리스(%s)"
+"Shell extension (%s)" = "쉘 확장(%s)"
+"%1$s Copyright IBM Corp. 2013, %2$d" = "%1$s Copyright IBM Corp. 2013, %2$d"
+
+
+/* accountconflictsitemdelegate.cpp */
+"%d conflicts" = "%d 충돌"
+
+
+/* accountsmodel.cpp */
+"Accounts" = "계정"
+" (default)" = " (기본값)"
+
+
+/* accountsprefwidget.cpp */
+"You have files checked out. Check in or revert your changes before removing the account." = "체크아웃된 파일이 있습니다. 계정을 제거하기 전에 변경사항을 체크인하거나 되돌리십시오."
+"Are you sure you want to remove %s?" = "%s을(를) 제거하시겠습니까?"
+"\nAll account transfers and services will be stopped and removed." = "\n모든 계정 전송 및 서비스를 중지하거나 제거합니다."
+"Please complete the account information." = "계정 정보를 완료하십시오."
+"There are no Aspera services associated with this account.\nClick here to discover services." = "이 계정과 연관된 Aspera 서비스가 없습니다.\n서비스를 검색하려면 여기를 클릭하십시오."
+"Your authentication token has gone stale. Click here to re-authenticate." = "인증 토큰의 시간이 경과되었습니다(stale). 재인증하려면 여기를 클릭하십시오."
+"Sync" = "동기화"
+"All changes will be discarded. Are you sure you want to proceed?" = "모든 변경사항을 버립니다. 계속하시겠습니까?"
+"Querying for services failed: %s" = "서비스 조회 실패: %s"
+"Account name" = "계정 이름"
+"Server address" = "서버 주소"
+"Username" = "사용자 이름"
+"Password" = "비밀번호"
+"Do not verify host's SSL certificate" = "호스트의 SSL 인증서를 확인하지 않음"
+"Account" = "계정"
+"Services" = "서비스"
+"Packages" = "패키지"
+"Settings..." = "설정..."
+
+
+/* accountverificationdialog.cpp */
+"%s Setup" = "%s 설정"
+"Connecting..." = "연결 중..."
+"Looking up host..." = "호스트 검색 중..."
+"Verifying cloud storage..." = "클라우드 스토리지 확인 중..."
+"Next" = "다음"
+"Please click 'Next' to re-authenticate the account: '%s'." = "'다음'을 클릭하여 '%s' 계정을 재인증하십시오."
+"Error verifying host: %s" = "호스트 확인 오류: %s"
+"Account is invalid." = "계정이 올바르지 않습니다."
+
+
+/* activitywindow.cpp */
+"Activity - %s" = "활동 - %s"
+"Application menu" = "애플리케이션 메뉴"
+"Inboxes" = "작업함"
+
+
+/* addaccount2dialog.cpp */
+"Back" = "이전"
+"Cloud Storage" = "클라우드 스토리지"
+"Account was not created due to the following errors:\n%s" = "다음 오류 때문에 계정이 작성되지 않았습니다. \n%s"
+
+
+/* addaccount2ssodialog.cpp */
+"Set up %s" = "%s 설정"
+"New Account - %s" = "새 계정 - %s"
+"\nDescription is already taken." = "\n설명은 이미 사용되었습니다."
+
+
+/* addaccountdialog.cpp */
+"\nName is already taken." = "\n 이름이 이미 사용되었습니다."
+"\nName is empty." = "\n이름이 비어 있습니다."
+"\nName cannot contain these characters: \\ / * ? : \" < > |" = "\n이름에는 다음 문자를 사용할 수 없습니다. \\ / * ? : \" < > |"
+"\nName is greater than max length: %d" = "\n이름이 최대 길이인 %d보다 큽니다."
+"\nServer address is empty." = "\n서버 주소가 비어 있습니다."
+
+
+/* addaccountwizard.cpp */
+"New account - %s" = "새 계정 - %s"
+
+
+/* addaccountwizard2.cpp */
+"Account Wizard - %s" = "계정 마법사 - %s"
+"Finish" = "완료"
+"Welcome to IBM Aspera Drive" = "IBM Aspera Drive 시작"
+"Fast and secure access to all your files." = "모든 파일에 신속하고 안전하게 액세스하십시오."
+"This wizard will help you set up your account." = "이 마법사를 사용하면 계정을 설정할 수 있습니다."
+"Set up account" = "계정 설정"
+"Select the IBM Aspera product you want to link to Drive." = "드라이브에 링크하려는 IBM Aspera 제품을 선택하십시오."
+"Enter your IBMid or work email to look up your organization." = "조직을 찾으려면 IBM ID 또는 작업 이메일을 입력하십시오."
+"Email" = "이메일"
+"We've sent your organization URL to your email." = "조직 URL을 이메일로 발송했습니다."
+"OR" = "또는"
+"Enter your organization URL here." = "여기에 조직 URL을 입력하십시오."
+"Please enter your organization name." = "조직 이름을 입력하십시오."
+"New Account" = "새 계정"
+"Please enter your server information." = "서버 정보를 입력하십시오."
+"Account name:" = "계정 이름:"
+"Server address:" = "서버 주소:"
+"Tip:" = "팁:"
+"An account with the same name already exists. Please choose a new name." = "이름이 같은 계정이 이미 있습니다. 새 이름을 선택하십시오."
+"Please enter all fields." = "모든 필드를 입력하십시오."
+"Authentication" = "인증"
+"Please choose your authentication method." = "인증 방법을 선택하십시오."
+"Unknown host type." = "알 수 없는 호스트 유형입니다."
+"Authentication URL is empty" = "인증 URL이 비어 있음"
+"Could not retrieve token from OAuth provider" = "OAuth 제공업체에서 토큰을 검색할 수 없습니다."
+"Basic Authentication" = "기본 인증"
+"SAML Authentication" = "SAML 인증"
+"Username:" = "사용자 이름:"
+"Password:" = "비밀번호:"
+"Login" = "로그인"
+"Please enter your credentials." = "신임 정보를 입력하십시오."
+"User name:" = "사용자 이름:"
+"Please enter your storage information." = "스토리지 정보를 입력하십시오."
+"Error verifying host: %1$s.\n%2$s" = "호스트 확인 오류: %1$s.\n%2$s"
+"Looking up services..." = "서비스 검색 중..."
+"Verifying storage..." = "스토리지 확인 중..."
+"Problem..." = "문제점..."
+"There was a problem with your account." = "계정에 문제점이 있습니다."
+"Inbox Setup" = "작업함 설정"
+"Package downloading" = "패키지 다운로드"
+"The folder selected is not empty. Do you want to continue?" = "선택한 폴더가 비어 있지 않습니다. 계속하시겠습니까?"
+"Automatically download my packages to the following directory" = "내 패키지를 다음 디렉토리에 자동 다운로드"
+"I'd rather not set up automatic downloading now." = "지금 자동 다운로드를 설정하지 않습니다."
+"Change..." = "변경..."
+"Download existing packages" = "기존 패키지 다운로드"
+"Download my packages from date sent" = "발송 날짜에서 내 패키지 다운로드"
+"Only download packages from now on." = "지금부터는 패키지만 다운로드하십시오."
+"A week ago" = "일주일 전"
+"A month ago" = "한 달 전"
+"The beginning of time" = "시간의 시작"
+"Checking for new packages" = "새 패키지 검사"
+"Check for new packages" = "새 패키지 검사"
+"I'll check manually using the Check Now option." = "지금 검사 옵션을 사용하여 수동으로 확인합니다."
+"Every Minute" = "1분마다"
+"Every 5 Minutes" = "5분마다"
+"Every 15 Minutes" = "15분마다"
+"Every 30 Minutes" = "30분마다"
+"Every Hour" = "매시간"
+"Sync Setup" = "동기화 설정"
+"Sync folder location" = "동기화 폴더 위치"
+"Place my files in the following directory" = "내 파일을 다음 디렉토리에 배치"
+"I'd rather not set up file syncing now." = "지금 파일 동기화를 설정하지 않습니다."
+"Choose folders to sync" = "동기화할 폴더 선택"
+"Two-Way" = "양방향"
+"Remote to Local" = "원격에서 로컬로"
+"Local to Remote" = "로컬에서 원격으로"
+"Warning:" = "경고:"
+"\n\nContinue?" = "계속하시겠습니까?"
+"Synchronize with the selected remote folders." = "선택한 원격 폴더와 동기화하십시오."
+"I'll choose the folder to sync later." = "나중에 동기화할 폴더를 선택합니다."
+"Direction" = "방향"
+"Completing the Account Setup" = "계정 설정 완료"
+"Your account is almost complete. Press finish to create your account." = "계정이 거의 완료되었습니다. 완료를 눌러 계정을 작성하십시오."
+"Almost done" = "거의 완료"
+"The following services are available for this account." = "이 계정에 사용할 수 있는 서비스는 다음과 같습니다."
+
+
+/* v5filelockshttphandler.cpp */
+"Are you sure you want to discard changes to the selected files?" = "선택한 파일의 변경사항을 취소하시겠습니까?"
+
+
+/* bitrateformatter.cpp */
+"%s bps" = "%s bps"
+"%s Kbps" = "%s Kbps"
+"%s Mbps" = "%s Mbps"
+"%s Gbps" = "%s Gbps"
+"%s Tbps" = "%s Tbps"
+
+
+/* transfermonitoraccessible.cpp */
+"Transfer Monitor" = "전송 모니터"
+"Target rate: %1$llu megabits per second, Minimum rate: %2$llu megabits per second" = "대상 속도: 초당 %1$llu메가비트, 최소 속도: 초당 %2$llu메가비트"
+"Use the arrows to change the transfer rate and use SHIFT + arrows to change the minimum transfer rate" = "화살표를 사용하여 전송 속도를 변경하고 SHIFT + 화살표를 사용하여 최소 전송 속도를 변경하십시오."
+
+
+/* transferprogressformatter.cpp */
+"%s B" = "%s B"
+"%s TB" = "%s TB"
+"%s KB" = "%s KB"
+"%s MB" = "%s MB"
+"%s GB" = "%s GB"
+
+
+/* authenticationwindow.cpp */
+"User name input field" = "사용자 이름 입력 필드"
+"Password input field" = "비밀번호 입력 필드"
+"Login to: %s" = "로그인 대상: %s"
+"&User Name:" = "사용자 이름(&U):"
+"&Password:" = "비밀번호(&P):"
+"Password is too long. Maximum length is %d." = "비밀번호가 너무 깁니다. 최대 길이는 %d입니다."
+"&Remember this password" = "이 비밀번호 기억(&R)"
+"Authenticate - %s" = "인증 - %s"
+
+
+/* bandwidthprefwidget.cpp */
+"Transfer speeds depend on server settings and your network connectivity." = "전송 속도는 서버 설정과 네트워크 연결에 따라 달라집니다."
+"Manual Transfers" = "수동 전송"
+"The settings below let you limit transfer speeds for user-initiated transfers." = "아래 설정을 통해 사용자가 시작한 전송의 전송 속도를 제한할 수 있습니다."
+"Downloads" = "다운로드"
+"Limit to" = "제한"
+"Uploads" = "업로드"
+"Automatic Transfers" = "자동 전송"
+"The settings below let you limit transfer speeds for sync transfers and other background jobs." = "아래 설정을 통해 동기화 전송 및 기타 백그라운드 작업의 전송 속도를 제한할 수 있습니다."
+"Background downloads" = "백그라운드 다운로드"
+"Background uploads" = "백그라운드 업로드"
+
+
+/* cancelwizarddialog.cpp */
+"Press OK to cancel account setup." = "확인을 눌러 계정 설정을 취소하십시오."
+"%s Setup Cancelled" = "%s 설정이 취소됨"
+"Cancel account setup" = "계정 설정 취소"
+
+
+/* confirmationwindow.cpp */
+"An attempt is being made to connect with %s [RESTRICTED]. Do you want to allow this?" = "%s [RESTRICTED]과(와) 연결하려고 시도 중입니다. 허용하시겠습니까?"
+"An attempt is being made to connect with %s. Do you want to allow this?" = "%s과(와) 연결하려고 시도 중입니다. 허용하시겠습니까?"
+"Use my choice for all connections with this host" = "이 호스트와의 모든 연결에 선택사항 사용"
+"Allow" = "허용"
+"Deny" = "거부"
+"Confirm - %s" = "확인 - %s"
+
+
+/* confirmdeletesourcedialog.cpp */
+"Confirm deletion - %s" = "삭제 확인 - %s"
+
+
+/* conflictedfileswindow.cpp */
+"Conflicted Files - %s" = "충돌한 파일 - %s"
+
+
+/* conflictedfileswindow2.cpp */
+"Show in Finder" = "Finder에 표시"
+"Show in Windows Explorer" = "Windows Explorer에 표시"
+"Show in %s" = "%s에 표시"
+"Resolve Conflict" = "충돌 해결"
+"Refresh" = "새로 고치기"
+"Resolve Selected Conflicts" = "선택한 충돌 해결"
+"Save copy of the local conflicted file and sync again" = "로컬 충돌 파일의 사본을 저장하고 다시 동기화"
+"Failed to rename file from %1$s to %2$s" = "%1$s에서 %2$s(으)로 파일의 이름을 바꾸는 데 실패"
+"Name" = "이름"
+"Location" = "위치"
+"Last Updated By" = "마지막 업데이트 날짜"
+"Path" = "경로"
+"(first %d displayed) " = "(처음 %d개 표시) "
+"Conflicted Files %1$s- %2$s" = "충돌한 파일 %1$s- %2$s"
+
+
+/* errorlistwindow.cpp */
+"Errors - %s" = "오류 - %s"
+"Sessions error" = "세션 오류"
+"Failed to sync file:" = "파일 동기화 실패:"
+
+
+/* faspexinboxitemwidget.cpp */
+"Error: %1$s %2$s left" = "오류: %1$s %2$s이(가) 남음"
+"Error: %s" = "오류: %s"
+"Checking for new packages in: %s" = "%s에서 새 패키지 검사"
+"Checking for new packages..." = "새 패키지를 검사하는 중..."
+"Automatic checking is off." = "자동 검사가 꺼져 있습니다."
+"Stop automatic checking and inbox transfers." = "자동 검사 및 작업함 전송을 중지하십시오."
+"Start automatic checking and resume inbox transfers." = "자동 검사를 시작하고 작업함 전송을 재개하십시오."
+"No Inbox" = "작업함이 없음"
+"%1$s (+ %2$d)" = "%1$s (+ %2$d)"
+
+
+/* faspexinboxwindow.cpp */
+"Faspex Inboxes - %s" = "Faspex 작업함 - %s"
+"Check now" = "지금 확인"
+"Open folder" = "폴더 열기"
+"Inbox settings" = "작업함 설정"
+"Check All" = "모두 선택"
+
+
+/* faspexsettingsdialog.cpp */
+"Packages - %s" = "패키지 - %s"
+"The download folder is not empty. Do you want to continue?" = "다운로드 폴더가 비어 있지 않습니다. 계속하시겠습니까?"
+"\nNo download folder selected." = "\n다운로드 폴더가 선택되지 않았습니다."
+"Inbox settings could not be saved due to the following errors: %s" = "다음 오류 때문에 작업함 설정을 저장할 수 없습니다: %s"
+
+
+/* fasptransferinspectorwindow.cpp */
+"The selected transfer policy is not allowed. The server allowed policy is: %s." = "선택된 전송 정책이 허용되지 않습니다. 서버 허용 정책은 %s입니다."
+"Fixed" = "고정"
+"High" = "높음"
+"Fair" = "중간"
+"Low" = "낮음"
+
+
+/* finalwizarddialog.cpp */
+"Your account has been created! You may edit these settings anytime in Preferences." = "계정이 작성되었습니다! 이러한 설정은 환경 설정에서 언제든 편집할 수 있습니다."
+"Previous" = "이전"
+"%s Setup Complete" = "%s 설정 완료"
+"Congratulations!" = "축하합니다!"
+
+
+/* generalprefwidget.cpp */
+"Automatically launch when Windows starts" = "Windows 시작 시 자동으로 실행"
+"Activity Window" = "활동 창"
+"Open Transfers tab when an Inbox transfer is added" = "받은 편지함 전송이 추가되면 전송 탭 열기"
+"Close Activity window when all transfers are complete" = "모든 전송이 완료되면 활동 창 닫기"
+"Remove transfer list items:" = "전송 목록 항목 제거:"
+"Logging" = "로깅"
+"Logging level:" = "로깅 레벨:"
+"Manually" = "수동"
+"Upon Successful Transfer" = "전송 성공 시"
+"Info" = "정보"
+"Debug" = "디버그"
+"Trace" = "추적"
+"Remote View" = "원격 보기"
+"Max remote view items:" = "최대 원격 보기 항목:"
+
+
+/* guiapplication.cpp */
+"Account is invalid. Check network connection, account information and save." = "계정이 올바르지 않습니다. 네트워크 연결 및 계정 정보를 확인하고 저장하십시오."
+"You have active transfers. Are you sure you want to quit?" = "활성 전송이 있습니다. 종료하시겠습니까?"
+"Could not start new package. Check your settings or network connection and try again." = "새 패키지를 시작할 수 없습니다. 설정 또는 네트워크 연결을 확인하고 다시 시도하십시오."
+"Transfer monitor is unavailable for this transfer, because no activity is occurring." = "활동이 발생하지 않으므로 이 전송에 전송 모니터를 사용할 수 없습니다."
+"Could not delete sources for transfer: %s.\nThe file(s) may be in use or you do not have permission." = "전송의 소스를 삭제할 수 없음: %s.\n파일을 사용 중이거나 권한이 없습니다."
+"%s is already running." = "%s이(가) 이미 실행 중입니다."
+"%1$s Sync - %2$s" = "%1$s 동기화 - %2$s"
+"%1$s Inbox - %2$s" = "%1$s 작업함 - %2$s"
+
+
+/* guiutils.cpp */
+"Choose Folder - %s" = "폴더 선택 - %s"
+"Yes" = "예"
+"No" = "아니오"
+"Please complete account information." = "계정 정보를 완료하십시오."
+"No permission to download from %s" = "%s에서 다운로드할 권한이 없음"
+"No permission to upload to %s" = "%s에 업로드할 권한이 없음"
+"Folder %s does not exist" = "%s 폴더가 없음"
+
+
+/* hostsmodel.cpp */
+"Trust State" = "신뢰 상태"
+"Passphrase" = "비밀번호 문구"
+
+
+/* httpsecurityhandler.cpp */
+"There is a problem with the server's security certificate. Security certificate problems may indicate an attempt to fool you or intercept any data you send to the server. We recommend that you do not continue.\n\n%1$s\n\nDo you wish to trust the following server? %2$s" = "서버의 보안 인증서에 문제점이 있습니다. 보안 인증서 문제점은 사용자를 속이거나 서버에 전송하는 데이터를 가로채려는 시도를 의미할 수 있습니다. 계속하지 않는 것이 좋습니다.\n\n%1$s\n\n다음 서버를 신뢰하시겠습니까? %2$s"
+"Security problem" = "보안 문제점"
+
+
+/* accountsviewcontroller.mm */
+"Storage account:" = "스토리지 계정:"
+"Access key:" = "액세스 키:"
+"Path:" = "경로:"
+"Shared URL:" = "공유 URL:"
+"Revert" = "되돌리기"
+"Save" = "저장"
+"Storage" = "스토리지"
+"test" = "테스트"
+
+
+/* activitycontroller.mm */
+"Switch View" = "보기 전환"
+
+
+/* activityinboxdelegate.mm */
+"Check Now" = "지금 확인"
+"Open Folder" = "폴더 열기"
+"Inbox Settings" = "작업함 설정"
+
+
+/* activitysyncdelegate.mm */
+"Sync is not available for this account" = "이 계정에는 동기화를 사용할 수 없음"
+"Sync Settings" = "동기화 설정"
+
+
+/* activitytransfersdelegate.mm */
+"Go to:  %s" = "%s(으)로 이동"
+"Stop" = "중지"
+"Start" = "시작"
+"Resume" = "재개"
+"Retry" = "재시도"
+"Show in Transfer Monitor" = "전송 모니터에 표시"
+"Open Containing Folder" = "포함하는 폴더 열기"
+"Go to " = "이동 "
+"Clear list" = "목록 지우기"
+
+
+/* bandwidthviewcontroller.mm */
+"Kbps" = "Kbps"
+"Mbps" = "Mbps"
+"Limit downloads to" = "다운로드 제한"
+"Limit uploads to" = "업로드 제한"
+"Limit background downloads to" = "백그라운드 다운로드 제한"
+"Limit background uploads to" = "백그라운드 업로드 제한"
+
+
+/* checkoutnode.mm */
+"Discard Changes" = "변경사항 취소"
+"Are you sure you want to discard your changes to the selected files?" = "선택한 파일의 변경사항을 취소하시겠습니까?"
+
+
+/* cocoainitializer.mm */
+"About %s" = "%s 정보"
+"Hide %s" = "%s 숨기기"
+"Quit %s" = "%s 종료"
+"Preferences..." = "환경 설정..."
+"Hide Others" = "기타 숨기기"
+"Show All" = "모두 표시"
+"Edit" = "편집"
+"Undo" = "실행 취소"
+"Redo" = "다시 실행"
+"Cut" = "잘라내기"
+"Copy" = "복사"
+"Paste" = "붙여넣기"
+"Delete" = "삭제"
+"Select All" = "모두 선택"
+"Window" = "창"
+"Minimize" = "최소화"
+"Zoom" = "확대/축소"
+"Bring All to Front" = "모두 맨 앞으로 가져오기"
+
+
+/* filesystembrowsercell.mm */
+"Open" = "열기"
+"Rename" = "이름 바꾸기"
+"Archive" = "아카이브"
+"Undo archive" = "아카이브 실행 취소"
+"Check in" = "체크인"
+"Check out" = "체크아웃"
+
+
+/* filesystemnode.mm */
+"Folder %1$s is limited to %2$d." = "%1$s 폴더는 %2$d(으)로 제한됩니다."
+"Internal Error. FSItem is null." = "내부 오류입니다. FSItem이 널(null)입니다."
+"The original file does not exist." = "원본 파일이 없습니다."
+"The destination already has an item with the same file name." = "대상에 파일 이름이 같은 항목이 이미 있습니다."
+"Internal Error. FSItem is Null." = "내부 오류입니다. FSItem이 널(null)입니다."
+
+
+/* networkviewcontroller.mm */
+"Obtain proxy configuration from" = "가져올 프록시 구성이 있는 위치"
+"System" = "시스템"
+"Manual" = "수동"
+"Configure proxy settings." = "프록시 설정을 구성하십시오."
+"Use HTTP Proxy" = "HTTP 프록시 사용"
+"Port:" = "포트:"
+"HTTP Proxy" = "HTTP 프록시"
+"Use FASP Proxy (DNAT)" = "FASP 프록시 사용(DNAT)"
+"Secure (DNATS)" = "보안(DNATS)"
+"FASP Proxy" = "FASP 프록시"
+
+
+/* preferenceswindowcontroller.mm */
+"Preferences" = "환경 설정"
+
+
+/* remoteviewcontroller.mm */
+"New folder" = "새 폴더"
+"Server" = "서버"
+"Storage type" = "스토리지 유형"
+"Storage host" = "스토리지 호스트"
+"Storage path" = "스토리지 경로"
+"Local inbox directory" = "로컬 작업함 디렉토리"
+"Sync local directory" = "로컬 디렉토리 동기화"
+"Delete Files" = "파일 삭제"
+"Are you sure you want to permanently delete the selected files?" = "선택한 파일을 완전히 삭제하시겠습니까?"
+"Download has not completed" = "다운로드가 완료되지 않음"
+"Create new package" = "새 패키지 작성"
+"Create new folder" = "새 폴더 작성"
+
+
+/* syncwrapperqt.mm */
+" Sync" = " 동기화"
+"total files and directories" = "총 파일 및 디렉토리 수"
+"Unknown size" = "알 수 없는 크기"
+"Nothing to sync" = "동기화할 사항이 없음"
+"Calculating size..." = "크기 계산 중..."
+"Never started" = "시작하지 않음"
+"%d conflict(s)" = "%d개의 충돌"
+"%d file error(s)" = "%d개의 파일 오류"
+"Start file sync" = "파일 동기화 시작"
+"Stop file sync" = "파일 동기화 중지"
+"Warning: %s" = "경고: %s"
+"Current File" = "현재 파일"
+"Last File" = "마지막 파일"
+"%d file(s)" = "%d개의 파일"
+"Synced" = "동기화됨"
+"Retrying" = "재시도"
+"Next attempt in %s" = "%s 후에 다음 시도"
+"Next sync in %s" = "%s 후에 다음 동기화"
+"Checking for changes" = "변경사항 검사"
+"Downloading" = "다운로드"
+"Uploading" = "업로드"
+"Syncing" = "동기화"
+"%s remaining" = "%s 남음"
+
+
+/* transfersviewcontroller.mm */
+"Download Directory" = "다운로드 디렉토리"
+"Downloads location:" = "다운로드 위치:"
+"Remove:" = "제거:"
+"Always ask me where to save downloaded files." = "다운로드한 파일을 저장할 위치를 항상 묻습니다."
+"Browse..." = "찾아보기..."
+"Queue:" = "큐:"
+"Enable queuing" = "큐 사용"
+"Maximum concurrent transfers:" = "최대 동시 전송 수:"
+"Retry:" = "재시도:"
+"Automatically retry failed transfers" = "실패한 전송을 자동으로 재시도"
+"Attempts:" = "시도:"
+"Interval:" = "간격:"
+"The interval specifies an amount of time that will elapse between each attempt to restart a failed transfer." = "간격은 실패한 전송을 재시작하려고 다시 시도하기 전에 경과해야 하는 시간을 지정합니다."
+"Sync:" = "동기화:"
+"seconds" = "초"
+"minutes" = "분"
+"hours" = "시간"
+
+
+/* transferwrapper.h */
+"Unlock encrypted files" = "암호화된 파일 잠금 해제"
+
+
+/* transferwrapperqt.mm */
+"Decryption in progress..." = "복호화 진행 중..."
+"Decryption finished" = "복호화 완료"
+"Authenticating..." = "인증 중..."
+"Measuring bandwidth..." = "대역폭 측정 중..."
+"Retrying in %s" = "%s 후에 재시도"
+"Stopping..." = "중지 중..."
+"Queued" = "큐에 대기됨"
+"elapsed" = "경과됨"
+/* The whole string is "Transferring 106 MB / 1.0 GB (20.03 Mbps) - 2:31:48 remaining".
+    since we have "%s remaining" translated, this long string is now splited into two parts:
+    "Transferring 106 MB / 1.0 GB (20.03 Mbps)",
+    "2:31:48 remaining" */
+"Transferring %1$s (%2$s)" = "%1$s 전송 (%2$s)"
+"Downloading %1$s (%2$s)" = "%1$s 다운로드 (%2$s)"
+"Uploading %1$s (%2$s)" = "%1$s 업로드 (%2$s)"
+"Done" = "완료"
+"Unknown" = "알 수 없음"
+"Open containing folder" = "포함하는 폴더 열기"
+"Open transfer monitor" = "전송 모니터 열기"
+"Delete source files on complete" = "완료 시 소스 파일 삭제"
+
+
+/* metadatainputwidget.cpp */
+"Missing required fields: %s" = "누락된 필수 필드: %s"
+
+
+/* networkprefwidget.cpp */
+"Network: HTTP Port is empty. Valid range is 0 to 65535.\n" = "네트워크: HTTP 포트가 비어 있습니다. 올바른 범위는 0 - 65535입니다.\n"
+"Network: HTTP Port is invalid. Valid range is 0 to 65535.\n" = "네트워크: HTTP 포트가 올바르지 않습니다. 올바른 범위는 0 - 65535입니다.\n"
+"Network: FASP Address is empty.\n" = "네트워크: FASP 주소가 비어 있습니다."
+"Network: FASP Port is empty. Valid range is 0 to 65535.\n" = "네트워크: FASP 포트가 비어 있습니다. 올바른 범위는 0 - 65535입니다.\n"
+"Network: FASP Port is invalid. Valid range is 0 to 65535.\n" = "네트워크: FASP 포트가 올바르지 않습니다. 올바른 범위는 0 - 65535입니다.\n"
+"Connect to the Internet via an HTTP proxy." = "HTTP 프록시를 통해 인터넷에 연결하십시오."
+
+
+/* passphrasewindow.cpp */
+"Protected Content - %s" = "보호된 컨텐츠 - %s"
+"Enter a passphrase to decrypt protected files as they are downloaded." = "다운로드할 때 보호된 파일을 복호화하도록 비밀번호 문구를 입력하십시오."
+"Enter a passphrase to store files in an encrypted format on the server." = "서버에서 암호화된 형식으로 파일을 저장하려면 비밀번호 문구를 입력하십시오."
+"A passphrase is required." = "비밀번호 문구는 필수입니다."
+"Keep files encrypted" = "파일을 암호화한 상태로 유지"
+"Keep files unencrypted" = "파일을 암호화되지 않은 상태로 유지"
+"Confirm" = "확인"
+"Leave uploaded files unencrypted." = "업로드된 파일을 암호화되지 않은 상태로 두십시오."
+
+
+/* sendtodialog.cpp */
+"Send Files - " = "파일 보내기 - "
+"Send" = "보내기"
+"The following were not added because the same name exists:\n\n" = "같은 이름이 있으므로 다음이 추가되지 않았습니다.\n\n"
+"Name Conflicts - " = "이름 충돌 - "
+"Dropbox" = "드롭박스"
+"The title cannot contain any of the following characters: %s" = "제목에 다음 문자가 포함될 수 없음: %s"
+"Package not sent. Account has been deleted." = "패키지를 보내지 않았습니다. 계정이 삭제되었습니다."
+"Failed to send package. Could not parse error message from server." = "패키지를 보내지 못했습니다. 서버에서 오류 메시지를 구문 분석할 수 없습니다."
+"Failed to send package: " = "패키지 보내기 실패: "
+"Server error. Failed to send package:\n" = "서버 오류. 패키지 보내기 실패:\n"
+"Server error. Failed to send package: " = "서버 오류. 패키지 보내기 실패: "
+"Select files" = "파일 선택"
+"Select folder" = "폴더 선택"
+"The note is cut to fit the maximum length of %d." = "최대 길이인 %d에 맞게 참고를 자릅니다."
+"Sharing files from location '%s' is not supported." = "'%s' 위치에서 파일을 공유하는 기능은 지원되지 않습니다."
+"This workspace doesn't allow sending packages to external users." = "이 작업공간에서는 외부 사용자에게 패키지를 보낼 수 없습니다."
+"Maximum number of items reached." = "최대 항목 수에 도달했습니다."
+
+
+/* sync2wizarddialog.cpp */
+"Warning:%s\n\nContinue?" = "경고:%s\n\n계속하시겠습니까?"
+
+
+/* syncerrordialog.cpp */
+"Share" = "공유"
+"File" = "파일"
+" File Errors" = " 파일 오류"
+"File Conflict" = "파일 충돌"
+"Displaying %1$d of %2$llu errors" = "%2$llu개의 오류 중 %1$d개 표시"
+"Remote" = "원격"
+"Type" = "유형"
+"Message" = "메시지"
+" Session Errors" = " 세션 오류"
+"Warning" = "경고"
+
+
+/* syncitemwidget2.cpp */
+"Continuous Mode" = "연속 모드"
+
+
+/* syncsettingsdialog.cpp */
+"The local sync folder cannot be empty." = "로컬 동기화 폴더는 비어 있지 않아야 합니다."
+"No remote folders selected." = "원격 폴더를 선택하지 않았습니다."
+"Sync settings could not be saved due to the " = "다음과 같은 이유로 동기화 설정을 저장할 수 없습니다. "
+"You are changing continuous mode.\nThis will also reset sync. Click Yes to continue." = "연속 모드가 변경됩니다. \n동기화도 재설정됩니다. 계속하려면 예를 클릭하십시오."
+"This will reset your sync history. Click Yes to continue." = "동기화 히스토리가 재설정됩니다. 계속하려면 예를 클릭하십시오."
+"Failed to create directory: %s" = "디렉토리 작성 실패: %s"
+"The local sync folder selected is not empty. Do you want to continue?" = "선택한 로컬 동기화 폴더가 비어 있지 않습니다. 계속하시겠습니까?"
+
+
+/* syncwidget.cpp */
+"Sync settings" = "동기화 설정"
+"File sync" = "파일 동기화"
+
+
+/* transfersprefwidget.cpp */
+"Save downloaded files to:" = "다운로드 파일 저장 위치:"
+"Browse" = "찾아보기"
+"Queue" = "큐"
+"time(s)" = "회"
+"Always prompt on delete" = "삭제 시 항상 프롬프트"
+
+
+/* transferstatuswidget.cpp */
+"Go to" = "이동"
+"Retrying in" = "재시도 간격"
+"Resuming..." = "재개 중..."
+"Error: Server refused request" = "오류: 서버가 요청을 거절함"
+"Error: Authentication failed" = "오류: 인증 실패"
+"Transferring" = "전송"
+"remaining" = "남음"
+" percent" = " 백분율"
+
+
+/* transferstatuswidgetaccessible.cpp */
+"Use the tab to move through the different actions" = "탭을 사용하여 다른 조치 진행"
+
+
+/* transferstatuswidgetcontaineraccessible.cpp */
+"Transfers list" = "전송 목록"
+"List with all the current transfers" = "현재 전송이 모두 포함되어 있는 목록"
+"Use the up and down arrows to move through the different transfers" = "위아래 화살표를 사용하여 다른 전송으로 이동"
+
+
+/* transferswindow.cpp */
+"Transfers - %s" = "전송 - %s"
+
+
+/* transferswindowaccessible.cpp */
+"Window with all the transfers" = "모든 전송이 포함된 창"
+"Use the tab to access the transfer list" = "탭을 사용하여 전송 목록에 액세스"
+
+
+/* trayhandler.cpp */
+"&About..." = "정보(&A)..."
+"Ac&tivity" = "활동(&T)"
+"&Run diagnostic" = "진단 실행(&R)"
+"&Unlock encrypted files" = "암호화된 파일 잠금 해제(&U)"
+"&Quit" = "종료(&Q)"
+"&Open log folder" = "로그 폴더 열기(&O)"
+"&Preferences..." = "환경 설정(&P)..."
+"Check &for updates" = "업데이트 확인(&F)"
+"&Send to..." = "받는 위치(&S)..."
+"&Unlock Encrypted Files" = "암호화된 파일 잠금 해제(&U)"
+"&Open Log Folder" = "로그 폴더 열기(&O)"
+"Check &For Updates" = "업데이트 확인(&F)"
+"&Send To..." = "받는 위치(&S)..."
+
+
+/* updateswindow.cpp */
+"Updates - %s" = "업데이트 - %s"
+"Install Update" = "업데이트 설치"
+"Skip This Version" = "이 버전 건너뛰기"
+"Remind Me Later" = "나중에 알림"
+"Close" = "닫기"
+"Checking for updates..." = "업데이트 확인 중..."
+"(Admin privileges required)." = "(관리 권한 필수)."
+"New version available: %1$s %2$s" = "사용 가능한 새 버전: %1$s %2$s"
+"No new updates available." = "사용 가능한 새 업데이트가 없습니다."
+"Failed to download the update." = "업데이트를 다운로드하지 못했습니다."
+"Downloading..." = "다운로드 중..."
+"Ready to install. All of your running transfers will be stopped." = "설치할 준비가 되었습니다. 실행 중인 전송이 모두 중지됩니다."
+"Failed to update." = "업데이트하지 못했습니다."
+"Updating..." = "업데이트 중..."
+"Update complete. %s will restart." = "업데이트가 완료되었습니다. %s을(를) 다시 시작합니다."
+"Update failed: %s" = "업데이트 실패: %s"
+
+
+/* winfiledialoghelper.cpp */
+"Sending remote files is not supported" = "원격 파일 보내기가 지원되지 않음"
+
+
+/* AboutWindow.cpp */
+"About - IBM Aspera Crypt" = "제품 정보 - IBM Aspera Crypt"
+"IBM Aspera Crypt" = "IBM Aspera Crypt"
+"\302\251 Copyright IBM Corp. 2009, 2019" = "\302\251 Copyright IBM Corp. 2009, 2019"
+
+
+/* BusyDialog.cpp */
+"Processing..." = "처리 중..."
+
+
+/* DecryptManager.cpp */
+"Task could not be created for %s" = "%s에 대한 태스크를 작성할 수 없음"
+"Decryption already in progress." = "복호화가 이미 진행 중입니다."
+"Cannot perform operations during decryption." = "복호화 중에 조작을 수행할 수 없습니다."
+"Failed list is empty." = "실패 목록이 비어 있습니다."
+"Could not remove file %s" = "%s 파일을 제거할 수 없음"
+"Could not remove file %s. file does not exist." = "%s 파일을 제거할 수 없습니다. 파일이 없습니다."
+"Error: could not allocate memory for task %s " = "오류: %s 태스크에 대한 메모리를 할당할 수 없음 "
+"Could not rename output %1$s to %2$s" = "출력 이름을 %1$s에서 %2$s(으)로 바꿀 수 없음"
+"Could not rename input %1$s to %2$s" = "입력 이름을 %1$s에서 %2$s(으)로 바꿀 수 없음"
+"Could not remove file %s. Does not exist" = "%s 파일을 제거할 수 없습니다. 해당 파일이 없습니다."
+
+
+/* FaspDecryptWorker.cpp */
+"Could not write to destination." = "대상에 쓸 수 없습니다."
+"Code:" = "코드:"
+"Input file is corrupted or not encrypted." = "입력 파일이 손상되었거나 암호화되지 않았습니다."
+"Invalid file" = "올바르지 않은 파일"
+"Source file does not exist." = "소스 파일이 없습니다."
+"Source is not a file." = "소스가 파일이 아닙니다."
+"Could not initialize decrypter." = "복호화기를 초기화할 수 없습니다."
+"Could not write out to device." = "디바이스에 쓸 수 없습니다."
+"Cancelled by user" = "사용자가 취소함"
+
+
+/* MainWindow.cpp */
+"Drag files and folders to start decrypting..." = "파일 및 폴더를 드래그하여 복호화 시작 중..."
+"Open Encrypted files" = "암호화된 파일 열기"
+"Encrypted Files (*.%s);;All Files (*)" = "암호화된 파일(*.%s);;모든 파일(*)"
+"Open Directory" = "디렉토리 열기"
+"There are current tasks. Do you want to exit?" = "현재 태스크가 있습니다. 종료하시겠습니까?"
+"Do you want to delete encrypted source files from finished tasks?" = "암호화된 소스 파일을 완료된 태스크에서 삭제하시겠습니까?"
+"   %1$s finished, %2$s failed, %3$s pending, %4$s total" = "   완료: %1$s, 실패: %2$s, 보류 중: %3$s, 총: %4$s"
+"%s task has failed." = "%s개의 태스크가 실패했습니다."
+"%s tasks have failed." = "%s개의 태스크가 실패했습니다."
+"Do you want to reload?" = "다시 로드하시겠습니까?"
+"Exit" = "종료"
+"Open Files" = "파일 열기"
+"Select file(s) to decrypt" = "복호화할 파일 선택"
+"Decrypt all files and folders in selected folder" = "선택된 폴더에서 모든 파일 및 폴더 복호화"
+"Clear All" = "모두 지우기"
+"Clear all tasks" = "태스크 모두 지우기"
+"Delete Encrypted" = "암호화된 경우 삭제"
+"Delete encrypted files from finished tasks" = "암호화된 파일을 완료된 태스크에서 삭제"
+"Clear Finished" = "완료된 경우 지우기"
+"Clear finished tasks" = "완료된 태스크 지우기"
+"Clear Failed" = "실패한 경우 지우기"
+"Clear failed tasks" = "실패한 태스크 지우기"
+"Clear Pending" = "보류 중인 경우 지우기"
+"Clear pending tasks" = "보류 중인 태스크 지우기"
+"Settings" = "설정"
+"Open Settings dialog" = "설정 대화 상자 열기"
+"About..." = "정보..."
+"Open About dialog" = "정보 대화 상자 열기"
+"Reload Failed" = "실패한 경우 다시 로드"
+"Reload failed tasks and resets status to Pending" = "실패한 태스크를 다시 로드하고 상태를 보류 중으로 재설정"
+"Decrypt" = "복호화"
+"Show passphrase" = "비밀번호 문구 표시"
+"View:" = "보기:"
+"Latest" = "최신"
+"Finished" = "완료"
+"Failed" = "실패"
+"Options" = "옵션"
+"About" = "정보"
+"Enter Passphrase" = "비밀번호 문구 입력"
+
+
+/* SettingsDialog.cpp */
+"Delete encrypted files when finished" = "완료되면 암호화된 파일 삭제"
+"1" = "1"
+"2" = "2"
+"4" = "4"
+"8" = "8"
+"Number of concurrent threads for decryption" = "복호화를 위한 동시 스레드의 수"
+
+
+/* Task.cpp */
+"Decrypting" = "복호화"
+"Waiting" = "대기 중"
+"Error %s" = "오류 %s"
+"Cancelled" = "취소됨"
+"Cleared" = "지워짐"
+"Finished -> %s" = "완료 -> %s"
+
+
+/* TaskManager.cpp */
+"A task is in progress, try again later." = "태스크가 진행 중입니다. 나중에 다시 시도하십시오."
+"Loading files..." = "파일 로드 중..."
+"Could not open file %1$s, for reading. %2$s" = "%1$s 파일을 읽기 위해 열 수 없습니다. %2$s"
+"Failed to reload tasks." = "태스크를 다시 로드하는 데에 실패했습니다."
+"Reloading failed tasks..." = "실패한 태스크를 다시 로드하는 중..."
+"Failed Tasks reloaded." = "실패한 태스크를 다시 로드했습니다."
+"No files cleared." = "파일이 지워지지 않았습니다."
+"Clearing pending tasks..." = "보류 중인 태스크 지우는 중..."
+"Could not clear pending tasks." = "보류 중인 태스크를 지울 수 없습니다."
+"All pending tasks cleared." = "보류 중인 태스크를 모두 지웠습니다."
+"Clearing failed tasks..." = "실패한 태스크 지우는 중..."
+"Could not clear failed tasks." = "실패한 태스크를 지울 수 없습니다."
+"All failed tasks cleared." = "실패한 태스크를 모두 지웠습니다."
+"Clearing finished tasks..." = "완료된 태스크 지우는 중..."
+"Could not clear finished tasks." = "완료된 태스크를 지울 수 없습니다."
+"All finished tasks cleared." = "완료된 태스크를 모두 지웠습니다."
+"Clearing all tasks..." = "태스크를 모두 지우는 중..."
+"Could not clear all tasks." = "일부 태스크를 지울 수 없습니다."
+"All tasks cleared" = "태스크를 모두 지웠습니다."
+"No files cleared for unknown status." = "알 수 없는 상태의 파일이 지워지지 않았습니다."
+"Could not load files." = "파일을 로드할 수 없습니다."
+"No files found." = "파일을 찾을 수 없습니다."
+"%s file loaded." = "%s개의 파일을 로드했습니다."
+"%s files loaded." = "%s개의 파일을 로드했습니다."
+"%s duplicate skipped." = "%s개의 중복을 건너뛰었습니다."
+"%s duplicates skipped." = "%s개의 중복을 건너뛰었습니다."
+"Deleting encrypted source files..." = "암호화된 소스 파일을 삭제하는 중..."
+"Encrypted source files deleted from finished tasks." = "암호화된 소스 파일을 완료된 태스크에서 삭제했습니다."
+"Not all encrypted files could be deleted." = "일부 암호화된 파일을 삭제할 수 없습니다."
+
+
+/* driveapplication.cpp */
+"Errors occurred while loading the configuration file" = "구성 파일을 로드하는 중 오류 발생"
+"Welcome to %s. Your setup is almost complete. Please enter your account login information." = "%s을(를) 시작합니다. 설정이 거의 완료되었습니다. 계정 로그인 정보를 입력하십시오."
+"You have invalid accounts. Would you like to review them?" = "올바르지 않은 계정이 있습니다. 검토하시겠습니까?"
+
+
+/* drivetrayhandler.cpp */
+"1 transfer." = "1개의 전송."
+"%d transfers." = "%d개의 전송."
+"1 inbox." = "1개의 작업함."
+"%d inboxes." = "%d개의 작업함."
+"1 sync." = "1개의 동기화."
+"%d syncs." = "%d개의 동기화."
+"Active:" = "활성:"
+
+
+/* driveupdater.cpp */
+"Downloaded package was not signed by %s." = "다운로드한 패키지가 %s에 의해 서명되지 않았습니다."
+"Unable to find installer package: %s" = "%s 설치 프로그램 패키지를 찾을 수 없습니다."
+"Update Cancelled." = "업데이트가 취소되었습니다."
+"Mount location not found: %s" = "%s 마운트 위치를 찾을 수 없습니다."
+"Application bundle could not be located: %s" = "%s 애플리케이션 번들을 찾을 수 없습니다."
+"%s is not an app bundle." = "%s이(가) 앱 번들이 아닙니다."
+"Failed to execute \"%s\"" = "\"%s\"을(를) 실행하지 못했습니다."
+"Failed to execute %s" = "%s을(를) 실행하지 못했습니다."
+"Updates are not available for this Operating System." = "이 운영 체제의 업데이트를 사용할 수 없습니다."
+
+
+/* aspcore_utils.cpp */
+"Path is too long. Max length of %s exceeded." = "경로가 너무 깁니다. 최대 길이인 %s을(를) 초과했습니다."
+"Path ends with /.." = "경로가 /..으로 끝남"
+"Path begins with ../" = "경로가 ../로 시작함"
+"Path contains /../" = "경로에 /../가 포함됨"
+"Path is .." = "경로가 ..임"
+"Illegal string found: \" %s \"." = "잘못된 문자열이 있음: \" %s \"."
+
+
+/* statuscode.cpp */
+"Continue" = "계속"
+"Switching Protocols" = "프로토콜 전환"
+"Created" = "작성됨"
+"Accepted" = "승인됨"
+"Non-Authoritative Information" = "신뢰할 수 없는 정보"
+"No Content" = "컨텐츠 없음"
+"Reset Content" = "컨텐츠 재설정"
+"Partial Content" = "부분 컨텐츠"
+"Multiple Choices" = "다중 선택사항"
+"Moved Permanently" = "영구 이동"
+"Found" = "찾음"
+"See Other" = "기타 참조"
+"Not Modified" = "수정되지 않음"
+"Use Proxy" = "프록시 사용"
+"Temporary Redirect" = "임시적으로 경로 재지정"
+"Bad Request" = "잘못된 요청"
+"Unauthorized" = "권한 없음"
+"Payment Required" = "지불 필수"
+"Forbidden" = "금지"
+"Not Found" = "찾을 수 없음"
+"Method Not Allowed" = "허용되지 않은 메소드"
+"Not Acceptable" = "허용할 수 없음"
+"Proxy Authentication Required" = "프록시 인증 필수"
+"Request Timeout" = "요청 제한시간"
+"Conflict" = "충돌"
+"Gone" = "이동"
+"Length Required" = "길이 필수"
+"Precondition Failed" = "전제조건 실패"
+"Request Entity Too Large" = "요청 엔티티가 너무 큼"
+"Request-URI Too Large" = "요청 URI가 너무 큼"
+"Unsupported Media Type" = "지원되지 않는 매체 유형"
+"Requested Range Not Satisfiable" = "요청된 범위를 만족시킬 수 없음"
+"Expectation Failed" = "예상 실패"
+"Unprocessable Entity" = "처리할 수 없는 엔티티"
+"Internal Server Error" = "내부 서버 오류"
+"Not Implemented" = "구현되지 않음"
+"Bad Gateway" = "잘못된 게이트웨이"
+"Service Unavailable" = "사용 불가능한 서비스"
+"Gateway Timeout" = "게이트웨이 제한시간"
+"HTTP Version Not Supported" = "HTTP 버전이 지원되지 않음"
+"Encryption At Rest Passphrase Required" = "휴면 시 암호화 비밀번호 문구 필수"
+
+
+
+

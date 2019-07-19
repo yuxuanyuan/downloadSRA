@@ -1,0 +1,28 @@
+#!/bin/sh
+
+BASEDIR=`dirname "$0"`
+export QT_PLUGIN_PATH="$BASEDIR/../plugins":$QT_PLUGIN_PATH
+export LD_PRELOAD="$BASEDIR/../lib/libssl.so.1.0.0 $BASEDIR/../lib/libcrypto.so.1.0.0"
+export QT_XKB_CONFIG_ROOT=$QT_XKB_CONFIG_ROOT:/etc/X11/xkb:/usr/share/X11/xkb:/usr/X11R6/lib/X11/xkb
+
+CONNECT_RESULT=`"$BASEDIR/asperaconnect.bin" "$@" 2>&1` 2> /dev/null
+
+# If this process was launched by native message host, do not print anything to stdout. jira:ascn-1012
+if [ "$1" = "--quiet" ]; then
+    exit 0
+fi
+
+# Automatically attempt to resolve XCB dependency issue
+XCB_RESULT=`echo $CONNECT_RESULT | grep -i 'This application failed to start because it could not find or load the Qt platform plugin "xcb" in "". Available platform plugins are: xcb. Reinstalling the application may fix this problem.'`
+if [ "" = "$XCB_RESULT" ]; then
+   echo "$CONNECT_RESULT"
+else
+   if [ -f /usr/lib/x86_64-linux-gnu/libstdc++.so.6 ]; then
+       cp -n $BASEDIR/../lib/libstdc++.so.6 $BASEDIR/../lib/libstdc++.so.6.bak
+       cp /usr/lib/x86_64-linux-gnu/libstdc++.so.6 $BASEDIR/../lib/
+       `"$BASEDIR/asperaconnect.bin" "$@"`
+   else
+       echo "$CONNECT_RESULT"
+       echo "Refer to https://support.asperasoft.com/hc/en-us/articles/115003430553 for possible fix"
+   fi
+fi

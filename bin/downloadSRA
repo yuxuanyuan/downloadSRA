@@ -1,0 +1,139 @@
+#!/bin/bash
+
+# This script aims to help download SRA file
+# ScriptName: downdloadSRA
+# Created date: 19-Jul-2019
+# Last modified: 19-Jul-2019
+# Note: v1.0 is the initial version
+# Copyright: Copyright (c) 2019 Yuxuan Yuan (yuxuan.yuan@outlook.com)
+
+####      #### ####      ####  #####         #####  ####      ####        #####          #####       ###
+ #  #    #  #  #  #      #  #   #  #        #   #   #  #      #  #       # # # #         # # ##      # #
+  #  #  #  #   #  #      #  #     #  #    #   #     #  #      #  #      # #   # #        # #  ##     # #
+   #   #  #    #  #      #  #       #   #   #       #  #      #  #     # #     # #       # #   ##    # #
+    #  # #     #  #      #  #         # # #         #  #      #  #    # # # # # # #      # #    ##   # #
+     #  #      #  #      #  #       #   #   #       #  #      #  #   # #         # #     # #     ##  # #
+     #  #       #  #* * *# #     #  #     #   #      # #* * *# #    # #           # #    # #      ## # #
+     ####        **********    #####         #####     ********    ###             ###   ###       #####
+
+VERSION=1.0
+###======================================= check this tool ==============================================
+
+RL=`which readlink`;
+
+if [[ ! -x $RL ]]; then
+    echo;
+    echo "Please ensure 'readlink' has been set in your PATH.";
+    echo >&2; exit 1;
+fi
+
+#get the absolute path of downdloadSRA
+
+downdloadSRA=`which $0`;
+if [[ -z "$downdloadSRA" ]]; then
+    downdloadSRA=`$RL -f $0`;
+else
+    downdloadSRA=`$RL -f $(which $BASENAME$0)`;
+fi
+
+downdloadSRA_path=`dirname "$downdloadSRA"`;
+
+if [[ "$downdloadSRA_path" == "." ]]; then
+    echo;
+    echo "Please give an excutive permission to `basename $0`";
+    echo; exit 1;
+fi
+
+###========================================== functions ================================================
+
+usage(){
+
+echo "
+Program: `basename $0`
+Version: $VERSION
+Author:  Yuxuan Yuan (yuxuan.yuan@outlook.com)
+
+Usage:   `basename $0` <command> [options] 
+
+command: ascp       download using ascp with a high speed 
+         wget       download using wget with a slow speed
+
+options: -h/-help   show this message
+         -i         SRA id, e.g. SRR000001
+         -o         output directory 
+"
+}
+
+check_path(){
+    myDir=`$RL -f $1`;
+    if [[ ! -d "$myDir" ]] || [[ ! -w "$myDir" ]]; then
+        echo; 
+        echo "Opps! It seems the output directory is not existent or writable, please check!";
+        echo; exit 1;
+    fi
+}
+
+###========================================== program ================================================
+##Print help if no args input
+
+if [[ $# -eq 0 ]]; then
+    usage;
+    exit 0;
+fi
+
+##Check the first arg
+if [[ $1 != "ascp" ]] && [[ $1 != "wget" ]]; then
+    if [[ $1 == "-h" ]] || [[ $1 == "-help" ]] || [[ $1 == "--help" ]]; then
+        usage;
+        exit 1;
+    else
+        echo -e "\nOpps! Unknown command '$1'";
+        echo -e "Please check '`basename $0` -h' and continue ...";
+        echo; exit 1;
+    fi
+fi
+
+if [[ $# == 1 ]]; then 
+    usage; exit 1;
+fi
+
+if [[ $# -gt 1 ]] && [[ $1 == "ascp" || $1 == "wget" ]]; then 
+    cmd=$1;
+    shift;
+    options=':hi:o:';
+    while getopts "$options" opt; do
+        case "$opt" in 
+            h) usage; exit 1;;
+            i) sra=${OPTARG};;
+            o) od=${OPTARG};;
+            \?) echo;echo -e "Oops! Unknown option '-$OPTARG'">&2; echo "Please check '`basename $0` -h' and continue..."; echo; exit 1;;
+            :) echo;echo -e "Missing option argument for '-$OPTARG'. Please check!">&2; echo; exit 1;;
+        esac
+    done
+    shift "$((OPTIND - 1))"
+
+    ##convert to uppercase 
+    sra=`echo ${sra} | tr a-z A-Z`;
+    F3="${sra:0:3}";
+    F6="${sra:0:6}";
+    
+    ##Check outDir
+    last_chr="${od: -1}"
+    if [[ "$last_chr" == "/" ]]; then
+        od="${od%?}";
+    fi
+    if [[ "$od" == "." ]];then
+        od=$PWD;
+    elif [[ ${od: -2} == ".." ]];then
+        od="$PWD/$od";
+    fi
+    check_path "$od"; 
+
+    if [[ $cmd == "ascp" ]]; then
+        $downdloadSRA_path/../tools/aspera/connect/bin/ascp -QT -l200M -i $downdloadSRA_path/../tools/aspera/connect/etc/asperaweb_id_dsa.openssh anonftp@ftp-trace.ncbi.nlm.nih.gov:/sra/sra-instant/reads/ByRun/sra/${F3}/${F6}/${sra}/${sra}.sra ${od}/.
+    else
+        wget https://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByRun/sra/${F3}/${F6}/${sra}/${sra}.sra ${od}/.
+    fi
+fi
+
+##END SCRIPT

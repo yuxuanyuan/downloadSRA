@@ -1,0 +1,1169 @@
+/* main.cpp */
+"An unexpected error occurred." = "Une erreur inattendue s'est produite."
+
+
+/* connectupdater.cpp */
+"Updates are not available for this Operating System" = "Aucune mise à jour n'est disponible pour ce système d'exploitation"
+"Installer failed to start" = "Échec du démarrage du programme d'installation"
+
+
+/* linuxconnectpreferenceswindow.cpp */
+"Preferences - %s" = "Préférences - %s"
+"Preferences contains errors:\n" = "Les préférences contiennent des erreurs :\n"
+"\n\nDo you want to revert changes?" = "\n\nVoulez-vous annuler les modifications ?"
+"General" = "Général"
+"Transfers" = "Transferts"
+"Network" = "Réseau"
+"Bandwidth" = "Bande passante"
+"Security" = "Sécurité"
+
+
+/* securityviewcontroller.mm */
+"Are you sure you want to remove the selected host?" = "Voulez-vous vraiment retirer l'hôte sélectionné ?"
+"Are you sure you want to remove all the hosts?" = "Voulez-vous vraiment retirer tous les hôtes ?"
+"Are you sure you want to remove the credential?" = "Voulez-vous vraiment supprimer les informations d'identification ?"
+"Are you sure you want to remove all credentials?" = "Voulez-vous vraiment supprimer toutes les informations d'identification ?"
+"Format not acceptable. Wildcard is only for the leftmost element of a fully qualified domain name.\neg. *.example.com." = "Format non accepté. Le caractère générique ne peut être utilisé que pour l'élément le plus à gauche d'un nom de domaine complet.\nExemple : *.exemple.com."
+"Format not acceptable. '/' is only for specifying IP subnet ranges.\neg. 10.1.0.0/16." = "Format non accepté. '/' sert uniquement à définir les plages de sous-réseau IP.\nExemple : 10.1.0.0/16."
+"Trusted Hosts" = "Hôtes de confiance"
+"Restricted Hosts" = "Hôtes soumis à restrictions"
+"Passwords" = "Mots de passe"
+"Content Protection" = "Protection du contenu"
+"Trusted hosts are hosts to which you have granted permission to always allow transfers.  If any attempt is made to start a transfer with a host that is not on this list, you will be given the option to allow or deny the transfer." = "Les hôtes de confiance sont des hôtes auxquels vous avez accordé une autorisation de transfert permanente.  Si une tentative est faite pour démarrer un transfert avec un hôte qui ne figure pas sur cette liste, il vous sera demandé d'autoriser ou de refuser le transfert."
+"Address:" = "Adresse :"
+"Add" = "Ajouter"
+"Remove" = "Supprimer"
+"Remove All" = "Tout supprimer"
+"Host" = "Hôte"
+"Restricted hosts are hosts for which you have enabled enhanced security.  If any attempt is made to start a transfer with a host that is on this list, you will be presented with a warning before it can proceed." = "Les hôtes soumis à restrictions sont des hôtes pour lesquels vous avez activé une sécurité renforcée.  En cas de tentative pour démarrer un transfert avec un hôte figurant sur cette liste, un avertissement vous sera envoyé et le transfert ne débutera qu'après autorisation."
+"Login information has been saved for the following hosts:" = "Des informations de connexion ont été sauvegardées pour les hôtes suivants :"
+"User" = "Utilisateur"
+"Content protection allows you to leave files encrypted on servers to which they have been uploaded.  Enter a list of hosts for which you want to enable this functionality." = "La protection du contenu permet de laisser les fichiers chiffrés sur les serveurs vers lesquels ils ont été chargés.  Entrez une liste d'hôtes pour lesquels vous souhaitez activer cette fonction."
+
+
+/* winconnectpreferenceswindow.cpp */
+"OK" = "OK"
+"Apply" = "Appliquer"
+"Cancel" = "Annuler"
+
+
+/* accountmanager.cpp */
+"Could not save account. %s" = "Impossible de sauvegarder le compte. %s"
+"Account is missing an ID." = "Le compte n'a pas d'ID."
+"Host is empty." = "L'hôte est vide."
+"No authentication type specified." = "Aucun type d'authentification spécifié."
+"User field is empty." = "La zone Utilisateur est vide."
+"Password field is empty." = "La zone Mot de passe est vide."
+"Missing token." = "Jeton manquant."
+"Max threads reached." = "Nombre max. d'unités d'exécution atteint."
+"Account has been deleted." = "Le compte a été supprimé."
+"No services discovered." = "Aucun service découvert."
+"Couldn't resolve host name." = "Impossible de résoudre le nom d'hôte."
+"Couldn't connect to server." = "Impossible de se connecter au serveur."
+"Invalid credentials." = "Informations d'identification non valides."
+"Your password has expired. Please reset your password and try again." = "Votre mot de passe est arrivé à expiration. Réinitialisez-le et recommencez."
+"Service discovery failed. No services discovered for host: %s" = "Échec de la reconnaissance du service. Aucun service détecté pour l'hôte : %s"
+"Storage validation failed." = "Échec de la validation du stockage."
+"This server does not have node services for storage testing." = "Ce serveur ne possède aucun service de noeud à utiliser pour le test du stockage."
+"This server requires a valid storage configuration." = "Ce serveur nécessite une configuration de stockage valide."
+"The server returned the following error:" = "Le serveur a renvoyé l'erreur suivante :"
+
+
+/* application.cpp */
+"%1$s stopped. You are running very low on disk space on (%2$s)." = "%1$s arrêté. Votre espace disque disponible est très faible sur (%2$s)."
+"%1$s. And %2$llu%% disk space remaining for download to %3$s." = "%1$s. Et %2$llu%% d'espace disque restant pour le téléchargement dans %3$s."
+"%1$s. And %2$llu%% disk space remaining for sync to %3$s." = "%1$s. Et %2$llu%% d'espace disque restant pour la synchronisation avec %3$s."
+"Accounts: " = "Comptes : "
+"%s Name is already taken." = "Le nom %s est déjà pris."
+
+
+/* exception.cpp */
+"An instance of the application is already running." = "Une instance de l'application est déjà en cours d'exécution."
+"Invalid input." = "Entrée non valide."
+"Failed to parse XML." = "Échec de l'analyse du code XML."
+"This system has reached the maximum number of Connect instances running allowed, probably under multiple user IDs. Some will have to be closed before this transfer can succeed." = "Ce système a atteint le nombre maximal autorisé d'instances Connect en cours d'exécution, sous plusieurs ID utilisateur probablement. Vous devrez en fermer certaines pour que ce transfert puisse aboutir."
+"Pointer is NULL." = "Le pointeur est NULL."
+"Unexpected value found." = "Valeur inattendue trouvée."
+"Not implemented." = "Non implémenté."
+"Json parse error." = "Erreur d'analyse JSON."
+"Json serialization failed." = "Échec de la sérialisation JSON."
+"Sql execution error." = "Erreur d'exécution du SQL."
+"Verification of properties failed." = "Échec de la vérification des propriétés."
+"HTTP error" = "Erreur HTTP"
+"User cancelled first run." = "L'utilisateur a annulé la première exécution."
+"Configuration file parsed successfully." = "Le fichier de configuration a été correctement analysé."
+"Error parsing configuration file." = "Erreur lors de l'analyse syntaxique du fichier de configuration."
+"Failed to parse application arguments." = "Échec de l'analyse des arguments de l'application."
+
+
+/* externaltransfer.cpp */
+"External transfer failed to update before timeout." = "Le transfert externe n'a pas réussi à effectuer la mise à jour avant le dépassement du délai d'attente."
+
+
+/* faspexinboxtask.cpp */
+"Inbox" = "Boîte de réception"
+"Account \"%s\" may not have permission to download packages." = "Il se peut que le compte \"%s\" n'ait pas l'autorisation de télécharger les packages."
+"User name or password not accepted, please check credentials and restart this Inbox." = "Nom d'utilisateur ou mot de passe refusé ; vérifiez les informations d'identification et relancez cette boîte de réception."
+"Could not start automatic checking for packages." = "Impossible de démarrer la vérification automatique des packages."
+
+
+/* filesfeedprocessor.cpp */
+"Workspace query returned NULL" = "La requête d'espace de travail a renvoyé la valeur NULL"
+"Packages query returned null." = "La requête des packages a renvoyé la valeur NULL."
+
+
+/* nodeapi.cpp */
+"Node V2 URL not found." = "URL du noeud V2 introuvable."
+
+
+/* nodefileinfogatherer.cpp */
+"Node not syncable" = "Noeud non synchronisable"
+"Node Api returns non-syncable." = "L'API du noeud renvoie l'état non synchronisable."
+"Duplicated folder name: " = "Nom de dossier en double : "
+". Please check your Files workspace and rename one of the folders." = ". Vérifiez votre espace de travail Fichiers et renommez l'un des dossiers."
+" code" = " code"
+
+
+/* nodefilesystemmodel.cpp */
+"upload only" = "transfert uniquement"
+"download only" = "téléchargement uniquement"
+"no permissions" = "aucune autorisation"
+
+
+/* nodetransferworker.cpp */
+"Resource not found. Cannot start transfer." = "Ressource introuvable. Impossible de lancer le transfert."
+
+
+/* ssoadapter.cpp */
+"Failed to communicate with the host." = "Échec de communication avec l'hôte."
+
+
+/* setupworker.cpp */
+"remote directory" = "répertoire distant"
+"remote directory: %s" = "répertoire distant : %s"
+"Permission denied to upload to %s" = "Autorisation de transfert vers %s refusée"
+"The folder: %s is no longer available. Go to the Drive \"Sync Settings\" dialog and select a different remote folder" = "Le dossier %s n'est plus disponible. Accédez à la boîte de dialogue \"Paramètres de synchronisation\" de Drive et sélectionnez un autre dossier distant"
+"The folder %s is no longer available. Go to Aspera on Cloud and resolve the errors." = "Le dossier %s n'est plus disponible. Accédez à Aspera on Cloud et résolvez les erreurs."
+
+
+/* startspec.cpp */
+"remote selection" = "sélection distante"
+
+
+/* syncerror.cpp */
+"No error" = "Aucune erreur"
+"Invalid Sync parameters" = "Paramètres de synchronisation non valides"
+"Connection failed" = "Échec de la connexion"
+"Error communicating with server" = "Erreur lors de la communication avec le serveur"
+"Your user name or password is incorrect" = "Votre nom d'utilisateur ou votre mot de passe est incorrect"
+"No remote directories selected" = "Aucun répertoire distant sélectionné"
+"Failed to send data" = "Échec de l'envoi des données"
+"Sync error" = "Erreur de synchronisation"
+"Sync engine error" = "Erreur de synchronisation du moteur"
+"Remote path is not a directory" = "Le chemin d'accès distant n'est pas un répertoire"
+"Permission denied to sync with remote folder" = "Autorisation de synchronisation avec le dossier distant refusée"
+"Sync session error" = "Erreur de la session de synchronisation"
+"Sync session failed to start" = "Échec du démarrage de la session de synchronisation"
+"Authentication failed" = "Échec de l'authentification"
+"Failed to initialize the Sync module" = "Échec de l'initialisation du module de synchronisation"
+"Failed to configure Sync session" = "Échec de la configuration de la session de synchronisation"
+"Failed to start Sync session" = "Échec du démarrage de la session de synchronisation"
+"Failed to stop Sync session" = "Échec de l'arrêt de la session de synchronisation"
+"Waiting for previous Sync session to end" = "En attente de la fin de la session de synchronisation précédente"
+"Sync tasks stopped. You are running very low on disk space." = "Tâches de synchronisation arrêtées. Votre espace disque disponible est très faible."
+"code" = "code"
+
+
+/* syncqueuemanager.cpp */
+"Local directory is not specified" = "Le répertoire local n'est pas spécifié"
+
+
+/* syncstats.cpp */
+"Error" = "Erreur"
+"Idle" = "Inactif"
+"Paused" = "En pause"
+"Stopped" = "Arrêté"
+"Running" = "En cours d'exécution"
+
+
+/* taskstaterunning.cpp */
+"Sync error: %s. Sync has been disabled" = "Erreur de synchronisation : %s. La synchronisation a été désactivée"
+
+
+/* transfer.cpp */
+"Authentication failed.  Host is empty." = "Échec de l'authentification.  L'hôte est vide."
+"User is empty." = "L'utilisateur est vide."
+"Destination root not allowed. %s" = "Racine de destination non autorisée. %s"
+"Source root not allowed. %s" = "Racine source non autorisée. %s"
+"Source path not allowed: %s" = "Chemin d'accès à la source non autorisé : %s"
+"Destination path not allowed: %s" = "Chemin d'accès à la destination non autorisé : %s"
+"Error: " = "Erreur : "
+"Disk write failed" = "Échec d'écriture sur le disque"
+"Ensure the server file still exists and is accessible." = "Vérifiez que le fichier serveur existe toujours et qu'il est accessible."
+"Error: Authentication failed." = "Erreur : échec de l'authentification."
+"The ascp executable is missing. Repair your Connect or Drive installation." = "L'exécutable ascp est manquant. Réparez votre installation de Connect ou de Drive."
+"Error: Session data transfer timeout (server)." = "Erreur : dépassement du délai d'attente pour le transfert des données de session (serveur)."
+"Error: Communication problem, ensure both client and server are connected to the network." = "Erreur : problème de communication, vérifiez que le client et le serveur sont connectés au réseau."
+"Error: Ensure that a valid fasp proxy address is set." = "Erreur : vérifiez qu'une adresse proxy fasp valide est définie."
+"Error: FASP process failed to initialize." = "Erreur : Échec de l'initialisation du processus FASP."
+"Error: Session failed to connect to the remote server." = "Erreur : La session n'a pas pu se connecter au serveur distant."
+
+
+/* transfermanager.cpp */
+"The destination already has an item with the same file name. Continue?" = "La destination contient déjà un élément portant le même nom de fichier. Poursuivre ?"
+
+
+/* transferproperties.cpp */
+"Input is not a fasp url: %s" = "L'entrée n'est pas une URL fasp : %s"
+"Could not create fasp url from: %s" = "Impossible de créer une URL fasp à partir de : %s"
+"Could not create fasp url from destination: %s" = "Impossible de créer une URL fasp à partir de la destination : %s"
+
+
+/* transferworker.cpp */
+"Error creating ascp arguments" = "Erreur lors de la création des arguments ascp"
+"FASP management terminated unexpectedly." = "La gestion FASP s'est terminée de manière inattendue."
+"FASP process failed to start. Check ascp binary." = "Echec du démarrage du processus FASP. Vérifiez le binaire ascp."
+"FASP process crashed." = "Le processus FASP est tombé en panne."
+"FASP process timed out." = "Le délai d'attente du processus FASP est dépassé."
+"FASP process write error." = "Erreur d'écriture du processus FASP."
+"FASP process read error." = "Erreur de lecture du processus FASP."
+"FASP process failed to start." = "Echec du démarrage du processus FASP. "
+"FASP process failed to initialize." = "Échec de l'initialisation du processus FASP."
+"File error" = "Erreur de fichier"
+
+
+/* updater.cpp */
+"Failed to communicate with the update server" = "Échec de communication avec le serveur de mises à jour"
+"Update server returned invalid data." = "Le serveur de mises à jour a renvoyé  des données non valides."
+
+
+/* humanstring.cpp */
+"at %s" = "à %s"
+"Yesterday" = "Hier"
+"yesterday" = "hier"
+"on %s" = "le %s"
+
+
+/* utils_helpers.cpp */
+"GetVolumePathName of %1$s failed: %2$ld" = "Échec de GetVolumePathName de %1$s : %2$ld"
+"Error encrypting data" = "Erreur lors du chiffrement des données"
+"Error decrypting data" = "Erreur lors du déchiffrement des données"
+
+
+/* utils.cpp */
+"\n%sName is empty." = "\n%sLe nom est vide."
+"\n%sName cannot contain these characters: \\ / * ? : \" < > |" = "\n%sLe nom ne peut pas contenir les caractères suivants : \\ / * ? : \" < > |"
+"\n%1$sName is greater than max length: %2$d" = "\n%1$sLe nom dépasse la longueur max. : %2$d"
+"\n%sServer address is empty." = "\n%sL'adresse du serveur est vide."
+"\n%sServer address is invalid." = "\n%sL'adresse du serveur n'est pas valide."
+"\n%sUser name is empty." = "\n%sLe nom d'utilisateur est vide."
+"\n%sPassword is empty." = "\n%sLe mot de passe est vide."
+"\n%sStorage path for Azure can not be empty or \"/\"." = "\n%sLe chemin de stockage pour Azure ne peut pas être vide ou contenir \"/\"."
+"Shared access signature must have either Read-List permissions or Read-Write-Delete-List permissions." = "La signature d'accès partagé doit avoir l'autorisation Read-List ou Read-Write-Delete-List."
+
+
+/* aboutwindow.cpp */
+"About - %s" = "A propos de - %s"
+"Internal (%s)" = "Interne (%s)"
+"Release (%s)" = "Edition (%s)"
+"Shell extension (%s)" = "Extension du shell (%s)"
+"%1$s Copyright IBM Corp. 2013, %2$d" = "%1$s Copyright IBM Corp. 2013, %2$d"
+
+
+/* accountconflictsitemdelegate.cpp */
+"%d conflicts" = "%d conflits"
+
+
+/* accountsmodel.cpp */
+"Accounts" = "Comptes"
+" (default)" = " (par défaut)"
+
+
+/* accountsprefwidget.cpp */
+"You have files checked out. Check in or revert your changes before removing the account." = "Vous avez des fichiers réservés. Restituez ou annulez vos modifications avant de supprimer le compte."
+"Are you sure you want to remove %s?" = "Voulez-vous vraiment supprimer %s ?"
+"\nAll account transfers and services will be stopped and removed." = "\nTous les transferts de compte et les services seront arrêtés et supprimés."
+"Please complete the account information." = "Renseignez les informations relatives au compte."
+"There are no Aspera services associated with this account.\nClick here to discover services." = "Aucun service Aspera n'est associé à ce compte.\nCliquez ici pour découvrir des services."
+"Your authentication token has gone stale. Click here to re-authenticate." = "Votre jeton d'authentification est périmé. Cliquez ici pour vous authentifier à nouveau."
+"Sync" = "Sync"
+"All changes will be discarded. Are you sure you want to proceed?" = "Toutes les modifications seront annulées. Voulez-vous vraiment continuer ?"
+"Querying for services failed: %s" = "Échec de l'interrogation des services : %s"
+"Account name" = "Nom du compte"
+"Server address" = "Adresse du serveur"
+"Username" = "Nom d'utilisateur"
+"Password" = "Mot de passe"
+"Do not verify host's SSL certificate" = "Ne pas vérifier le certificat SSL de l'hôte"
+"Account" = "Compte"
+"Services" = "Services"
+"Packages" = "Packages"
+"Settings..." = "Paramètres..."
+
+
+/* accountverificationdialog.cpp */
+"%s Setup" = "Configuration de %s"
+"Connecting..." = "Connexion en cours..."
+"Looking up host..." = "Recherche de l'hôte..."
+"Verifying cloud storage..." = "Vérification du stockage en cloud..."
+"Next" = "Suivant"
+"Please click 'Next' to re-authenticate the account: '%s'." = "Cliquez sur 'Suivant' pour authentifier à nouveau le compte : '%s'."
+"Error verifying host: %s" = "Erreur lors de la vérification de l'hôte : %s"
+"Account is invalid." = "Le compte n'est pas valide."
+
+
+/* activitywindow.cpp */
+"Activity - %s" = "Activité - %s"
+"Application menu" = "Menu Application"
+"Inboxes" = "Boîtes de réception"
+
+
+/* addaccount2dialog.cpp */
+"Back" = "Retour"
+"Cloud Storage" = "Stockage en cloud"
+"Account was not created due to the following errors:\n%s" = "Le compte n'a pas été créé en raison des erreurs suivantes :\n%s"
+
+
+/* addaccount2ssodialog.cpp */
+"Set up %s" = "Configurer %s"
+"New Account - %s" = "Nouveau compte - %s"
+"\nDescription is already taken." = "\nLa description est déjà utilisée."
+
+
+/* addaccountdialog.cpp */
+"\nName is already taken." = "\nLe nom est déjà pris."
+"\nName is empty." = "\nLe nom est vide."
+"\nName cannot contain these characters: \\ / * ? : \" < > |" = "\nLe nom ne peut pas contenir les caractères suivants : \\ / * ? : \" < > |"
+"\nName is greater than max length: %d" = "\nLe nom dépasse la longueur max. : %d"
+"\nServer address is empty." = "\nL'adresse du serveur est vide."
+
+
+/* addaccountwizard.cpp */
+"New account - %s" = "Nouveau compte - %s"
+
+
+/* addaccountwizard2.cpp */
+"Account Wizard - %s" = "Assistant de création de compte - %s"
+"Finish" = "Terminer"
+"Welcome to IBM Aspera Drive" = "Bienvenue dans IBM Aspera Drive"
+"Fast and secure access to all your files." = "Accès rapide et sécurisé à tous vos fichiers."
+"This wizard will help you set up your account." = "Cet assistant vous aide à configurer votre compte."
+"Set up account" = "Configurer le compte"
+"Select the IBM Aspera product you want to link to Drive." = "Sélectionnez le produit IBM Aspera que vous souhaitez lier à Drive."
+"Enter your IBMid or work email to look up your organization." = "Entrez votre IBMid ou votre e-mail de travail pour rechercher votre organisation."
+"Email" = "E-mail"
+"We've sent your organization URL to your email." = "Nous avons envoyé votre URL d'organisation à votre e-mail."
+"OR" = "OU"
+"Enter your organization URL here." = "Entrez ici l'URL de votre organisation."
+"Please enter your organization name." = "Entrez le nom de votre organisation."
+"New Account" = "Nouveau compte"
+"Please enter your server information." = "Entrez les informations du serveur."
+"Account name:" = "Nom du compte :"
+"Server address:" = "Adresse du serveur :"
+"Tip:" = "Astuce :"
+"An account with the same name already exists. Please choose a new name." = "Un compte portant le même nom existe déjà. Choisissez un autre nom."
+"Please enter all fields." = "Renseignez toutes les zones."
+"Authentication" = "Authentification"
+"Please choose your authentication method." = "Choisissez votre méthode d'authentification."
+"Unknown host type." = "Type d'hôte inconnu."
+"Authentication URL is empty" = "L'URL d'authentification est vide"
+"Could not retrieve token from OAuth provider" = "Impossible de récupérer le jeton auprès du fournisseur OAuth"
+"Basic Authentication" = "Authentification de base"
+"SAML Authentication" = "Authentification SAML"
+"Username:" = "Nom d'utilisateur :"
+"Password:" = "Mot de passe :"
+"Login" = "Connexion"
+"Please enter your credentials." = "Entrez vos informations d'identification."
+"User name:" = "Nom d'utilisateur :"
+"Please enter your storage information." = "Entrez vos informations de stockage."
+"Error verifying host: %1$s.\n%2$s" = "Erreur lors de la vérification de l'hôte : %1$s.\n%2$s"
+"Looking up services..." = "Recherche de services..."
+"Verifying storage..." = "Vérification du stockage..."
+"Problem..." = "Problème..."
+"There was a problem with your account." = "Un problème s'est produit avec votre compte."
+"Inbox Setup" = "Configuration de la boîte de réception"
+"Package downloading" = "Téléchargement du package"
+"The folder selected is not empty. Do you want to continue?" = "Le dossier sélectionné n'est pas vide. Voulez-vous continuer ?"
+"Automatically download my packages to the following directory" = "Télécharger automatiquement mes packages dans le répertoire suivant"
+"I'd rather not set up automatic downloading now." = "Je préfère ne pas mettre en place un téléchargement automatique maintenant."
+"Change..." = "Modifier..."
+"Download existing packages" = "Télécharger les packages existants"
+"Download my packages from date sent" = "Télécharger mes packages à partir de la date d'envoi"
+"Only download packages from now on." = "Télécharger uniquement les packages à partir de la date actuelle."
+"A week ago" = "Il y a une semaine"
+"A month ago" = "Il y a un mois"
+"The beginning of time" = "Début de la période"
+"Checking for new packages" = "Recherche de nouveaux packages"
+"Check for new packages" = "Rechercher de nouveaux packages"
+"I'll check manually using the Check Now option." = "Je vais vérifier manuellement à l'aide de l'option Vérifier maintenant."
+"Every Minute" = "Toutes les minutes"
+"Every 5 Minutes" = "Toutes les 5 minutes"
+"Every 15 Minutes" = "Toutes les 15 minutes"
+"Every 30 Minutes" = "Toutes les 30 minutes"
+"Every Hour" = "Toutes les heures"
+"Sync Setup" = "Configuration de la synchronisation"
+"Sync folder location" = "Emplacement du dossier de synchronisation"
+"Place my files in the following directory" = "Placer mes fichiers dans le répertoire suivant"
+"I'd rather not set up file syncing now." = "Je préfère ne pas configurer la synchronisation de fichier maintenant."
+"Choose folders to sync" = "Choisissez les dossiers à synchroniser"
+"Two-Way" = "Bidirectionnel"
+"Remote to Local" = "Distant à local"
+"Local to Remote" = "Local à distant"
+"Warning:" = "Avertissement :"
+"\n\nContinue?" = "\n\nContinuer ?"
+"Synchronize with the selected remote folders." = "Synchroniser avec les dossiers distants sélectionnés."
+"I'll choose the folder to sync later." = "Je choisirai le dossier à synchroniser ultérieurement."
+"Direction" = "Direction"
+"Completing the Account Setup" = "Configuration du compte terminée"
+"Your account is almost complete. Press finish to create your account." = "La configuration de votre compte est presque terminée. Cliquez sur Terminer pour créer votre compte."
+"Almost done" = "C'est presque terminé"
+"The following services are available for this account." = "Les services suivants sont disponibles pour ce compte."
+
+
+/* v5filelockshttphandler.cpp */
+"Are you sure you want to discard changes to the selected files?" = "Voulez-vous vraiment annuler les modifications apportées aux fichiers sélectionnés ?"
+
+
+/* bitrateformatter.cpp */
+"%s bps" = "%s bit/s"
+"%s Kbps" = "%s Kbit/s"
+"%s Mbps" = "%s Mbit/s"
+"%s Gbps" = "%s Gbit/s"
+"%s Tbps" = "%s Tbit/s"
+
+
+/* transfermonitoraccessible.cpp */
+"Transfer Monitor" = "Moniteur des transferts"
+"Target rate: %1$llu megabits per second, Minimum rate: %2$llu megabits per second" = "Débit cible : %1$llu mégabits par seconde, Débit minimal : %2$llu mégabits par seconde"
+"Use the arrows to change the transfer rate and use SHIFT + arrows to change the minimum transfer rate" = "Utilisez les flèches pour modifier le débit de transfert et utilisez MAJ + flèches pour modifier le débit de transfert minimal"
+
+
+/* transferprogressformatter.cpp */
+"%s B" = "%s o"
+"%s TB" = "%s To"
+"%s KB" = "%s Ko"
+"%s MB" = "%s Mo"
+"%s GB" = "%s Go"
+
+
+/* authenticationwindow.cpp */
+"User name input field" = "Zone d'entrée de nom d'utilisateur"
+"Password input field" = "Zone d'entrée de mot de passe"
+"Login to: %s" = "Connexion à : %s"
+"&User Name:" = "Nom d'&utilisateur :"
+"&Password:" = "&Mot de passe :"
+"Password is too long. Maximum length is %d." = "Le mot de passe est trop long. La longueur maximale est %d."
+"&Remember this password" = "&Garder ce mot de passe en mémoire"
+"Authenticate - %s" = "Authentification - %s"
+
+
+/* bandwidthprefwidget.cpp */
+"Transfer speeds depend on server settings and your network connectivity." = "Les vitesses de transfert varieront en fonction des paramètres du serveur et de votre connectivité de réseau."
+"Manual Transfers" = "Transferts manuels"
+"The settings below let you limit transfer speeds for user-initiated transfers." = "Les paramètres ci-dessous vous permettent de limiter les vitesses de transfert pour les transferts lancés par l'utilisateur."
+"Downloads" = "Téléchargements"
+"Limit to" = "Limiter à"
+"Uploads" = "Envois par téléchargement"
+"Automatic Transfers" = "Transferts automatiques"
+"The settings below let you limit transfer speeds for sync transfers and other background jobs." = "Les paramètres ci-dessous vous permettent de limiter les vitesses de transfert pour la synchronisation et les autres travaux en arrière-plan."
+"Background downloads" = "Réceptions par téléchargement en arrière-plan"
+"Background uploads" = "Envois par téléchargement en arrière-plan"
+
+
+/* cancelwizarddialog.cpp */
+"Press OK to cancel account setup." = "Appuyez sur OK pour annuler la configuration du compte."
+"%s Setup Cancelled" = "Configuration de %s annulée"
+"Cancel account setup" = "Annuler la configuration du compte"
+
+
+/* confirmationwindow.cpp */
+"An attempt is being made to connect with %s [RESTRICTED]. Do you want to allow this?" = "Une tentative de connexion à %s est en cours [SOUMIS À RESTRICTIONS]. Autoriser ?"
+"An attempt is being made to connect with %s. Do you want to allow this?" = "Une tentative de connexion à %s est en cours. Autoriser ?"
+"Use my choice for all connections with this host" = "Utiliser mon choix pour toutes les connexions effectuées avec cet hôte"
+"Allow" = "Autoriser"
+"Deny" = "Refuser"
+"Confirm - %s" = "Confirmer - %s"
+
+
+/* confirmdeletesourcedialog.cpp */
+"Confirm deletion - %s" = "Confirmer la suppression - %s"
+
+
+/* conflictedfileswindow.cpp */
+"Conflicted Files - %s" = "Fichiers en conflit - %s"
+
+
+/* conflictedfileswindow2.cpp */
+"Show in Finder" = "Afficher dans Finder"
+"Show in Windows Explorer" = "Afficher dans l'Explorateur Windows"
+"Show in %s" = "Afficher dans %s"
+"Resolve Conflict" = "Résoudre le conflit"
+"Refresh" = "Actualiser"
+"Resolve Selected Conflicts" = "Résoudre les conflits sélectionnés"
+"Save copy of the local conflicted file and sync again" = "Sauvegarder la copie du fichier en conflit local et synchroniser à nouveau"
+"Failed to rename file from %1$s to %2$s" = "Échec du changement de nom du fichier %1$s en %2$s"
+"Name" = "Nom"
+"Location" = "Emplacement"
+"Last Updated By" = "Dernière mise à jour par"
+"Path" = "Chemin d'accès"
+"(first %d displayed) " = "(%d premiers affichés) "
+"Conflicted Files %1$s- %2$s" = "Fichiers en conflit %1$s- %2$s"
+
+
+/* errorlistwindow.cpp */
+"Errors - %s" = "Erreurs - %s"
+"Sessions error" = "Erreur de sessions"
+"Failed to sync file:" = "Échec de la synchronisation du fichier :"
+
+
+/* faspexinboxitemwidget.cpp */
+"Error: %1$s %2$s left" = "Erreur : %1$s %2$s restant"
+"Error: %s" = "Erreur : %s"
+"Checking for new packages in: %s" = "Recherche de nouveaux packages dans : %s"
+"Checking for new packages..." = "Recherche de nouveaux packages..."
+"Automatic checking is off." = "La recherche automatique est désactivée."
+"Stop automatic checking and inbox transfers." = "Arrêtez la recherche automatique et les transferts de boîte de réception."
+"Start automatic checking and resume inbox transfers." = "Arrêtez la recherche automatique et reprenez les transferts de boîte de réception."
+"No Inbox" = "Aucune boîte de réception"
+"%1$s (+ %2$d)" = "%1$s (+ %2$d)"
+
+
+/* faspexinboxwindow.cpp */
+"Faspex Inboxes - %s" = "Boîtes de réception Faspex - %s"
+"Check now" = "Vérifier maintenant"
+"Open folder" = "Ouvrir le dossier"
+"Inbox settings" = "Paramètres de la boîte de réception"
+"Check All" = "Vérifier tout"
+
+
+/* faspexsettingsdialog.cpp */
+"Packages - %s" = "Packages - %s"
+"The download folder is not empty. Do you want to continue?" = "Le dossier de téléchargement n'est pas vide. Voulez-vous continuer ?"
+"\nNo download folder selected." = "\nAucun dossier de téléchargement sélectionné."
+"Inbox settings could not be saved due to the following errors: %s" = "Les paramètres de la boîte de réception n'ont pas pu être sauvegardés en raison des erreurs suivantes : %s"
+
+
+/* fasptransferinspectorwindow.cpp */
+"The selected transfer policy is not allowed. The server allowed policy is: %s." = "La stratégie de transfert sélectionnée n'est pas autorisée. Voici la stratégie autorisée par le serveur : %s."
+"Fixed" = "Fixe"
+"High" = "Elevée"
+"Fair" = "Moyenne"
+"Low" = "Faible"
+
+
+/* finalwizarddialog.cpp */
+"Your account has been created! You may edit these settings anytime in Preferences." = "Votre compte a été créé ! Vous pouvez éditer ces paramètres à tout moment dans les préférences."
+"Previous" = "Précédent"
+"%s Setup Complete" = "Configuration de %s terminée"
+"Congratulations!" = "Félicitations !"
+
+
+/* generalprefwidget.cpp */
+"Automatically launch when Windows starts" = "Lancer automatiquement lors du démarrage de Windows"
+"Activity Window" = "Fenêtre d'activité"
+"Open Transfers tab when an Inbox transfer is added" = "Ouvre l'onglet des transferts lorsqu'un transfert de boîte de réception est ajouté"
+"Close Activity window when all transfers are complete" = "Ferme la fenêtre d'activité lorsque tous les transferts sont terminés"
+"Remove transfer list items:" = "Supprimer les éléments de la liste des transferts :"
+"Logging" = "Journalisation"
+"Logging level:" = "Niveau de journalisation :"
+"Manually" = "Manuellement"
+"Upon Successful Transfer" = "Lorsque le transfert a abouti"
+"Info" = "Infos"
+"Debug" = "Débogage"
+"Trace" = "Trace"
+"Remote View" = "Affichage à distance"
+"Max remote view items:" = "Nombre maximum d'éléments d'affichage à distance :"
+
+
+/* guiapplication.cpp */
+"Account is invalid. Check network connection, account information and save." = "Le compte n'est pas valide. Vérifiez la connexion réseau, les informations relatives au compte et sauvegardez."
+"You have active transfers. Are you sure you want to quit?" = "Vous avez des transferts en cours. Voulez-vous vraiment fermer l'application ?"
+"Could not start new package. Check your settings or network connection and try again." = "Impossible de démarrer le nouveau package. Vérifiez vos paramètres ou la connexion réseau et recommencez."
+"Transfer monitor is unavailable for this transfer, because no activity is occurring." = "Le Moniteur des transferts est indisponible pour ce transfert car aucune activité n'est en cours."
+"Could not delete sources for transfer: %s.\nThe file(s) may be in use or you do not have permission." = "Impossible de supprimer les sources pour le transfert : %s.\nLe ou les fichiers sont peut-être utilisés ou vous ne disposez pas de l'autorisation appropriée."
+"%s is already running." = "%s est déjà en cours d'exécution."
+"%1$s Sync - %2$s" = "Synchronisation de %1$s - %2$s"
+"%1$s Inbox - %2$s" = "Boîte de réception de %1$s - %2$s"
+
+
+/* guiutils.cpp */
+"Choose Folder - %s" = "Choisir un dossier - %s"
+"Yes" = "Oui"
+"No" = "Non"
+"Please complete account information." = "Renseignez les informations relatives au compte."
+"No permission to download from %s" = "Aucune autorisation de téléchargement à partir de %s"
+"No permission to upload to %s" = "Aucune autorisation de transfert vers %s"
+"Folder %s does not exist" = "Le dossier %s n'existe pas"
+
+
+/* hostsmodel.cpp */
+"Trust State" = "Etat des relations de confiance"
+"Passphrase" = "Phrase passe"
+
+
+/* httpsecurityhandler.cpp */
+"There is a problem with the server's security certificate. Security certificate problems may indicate an attempt to fool you or intercept any data you send to the server. We recommend that you do not continue.\n\n%1$s\n\nDo you wish to trust the following server? %2$s" = "Un problème s'est produit avec le certificat de sécurité du serveur. Les problèmes de certificat de sécurité peuvent indiquer une tentative de vous tromper ou d'intercepter les données que vous envoyez au serveur. Nous vous recommandons de ne pas continuer.\n\n%1$s\n\nVoulez-vous faire confiance au serveur suivant ? %2$s"
+"Security problem" = "Problème de sécurité"
+
+
+/* accountsviewcontroller.mm */
+"Storage account:" = "Compte de stockage :"
+"Access key:" = "Clé d'accès :"
+"Path:" = "Chemin d'accès :"
+"Shared URL:" = "URL partagée :"
+"Revert" = "Annuler"
+"Save" = "Sauvegarder"
+"Storage" = "Stockage"
+"test" = "test"
+
+
+/* activitycontroller.mm */
+"Switch View" = "Changer de vue"
+
+
+/* activityinboxdelegate.mm */
+"Check Now" = "Vérifier maintenant"
+"Open Folder" = "Ouvrir le dossier"
+"Inbox Settings" = "Paramètres de la boîte de réception"
+
+
+/* activitysyncdelegate.mm */
+"Sync is not available for this account" = "La synchronisation n'est pas disponible pour ce compte"
+"Sync Settings" = "Paramètres de synchronisation"
+
+
+/* activitytransfersdelegate.mm */
+"Go to:  %s" = "Accéder à :  %s"
+"Stop" = "Arrêter"
+"Start" = "Démarrer"
+"Resume" = "Reprendre"
+"Retry" = "Nouvelle tentative"
+"Show in Transfer Monitor" = "Afficher dans le Moniteur des transferts"
+"Open Containing Folder" = "Ouvrir le dossier conteneur"
+"Go to " = "Aller à "
+"Clear list" = "Effacer la liste"
+
+
+/* bandwidthviewcontroller.mm */
+"Kbps" = "Kops"
+"Mbps" = "Mops"
+"Limit downloads to" = "Limiter les réceptions par téléchargement à"
+"Limit uploads to" = "Limiter les envois par téléchargement à"
+"Limit background downloads to" = "Limiter les réceptions par téléchargement en arrière-plan à"
+"Limit background uploads to" = "Limiter les envois par téléchargement en arrière-plan à"
+
+
+/* checkoutnode.mm */
+"Discard Changes" = "Annuler les modifications"
+"Are you sure you want to discard your changes to the selected files?" = "Voulez-vous vraiment annuler les modifications apportées aux fichiers sélectionnés ?"
+
+
+/* cocoainitializer.mm */
+"About %s" = "A propos de %s"
+"Hide %s" = "Masquer %s"
+"Quit %s" = "Quitter %s"
+"Preferences..." = "Préférences..."
+"Hide Others" = "Masquer autres"
+"Show All" = "Afficher tout"
+"Edit" = "Éditer"
+"Undo" = "Annuler"
+"Redo" = "Rétablir"
+"Cut" = "Couper"
+"Copy" = "Copier"
+"Paste" = "Coller"
+"Delete" = "Supprimer"
+"Select All" = "Sélectionner tout"
+"Window" = "Fenêtre"
+"Minimize" = "Réduire"
+"Zoom" = "Zoom"
+"Bring All to Front" = "Ramener tout au premier plan"
+
+
+/* filesystembrowsercell.mm */
+"Open" = "Ouverte"
+"Rename" = "Renommer"
+"Archive" = "Archiver"
+"Undo archive" = "Annuler l'archivage"
+"Check in" = "Restituer"
+"Check out" = "Réserver"
+
+
+/* filesystemnode.mm */
+"Folder %1$s is limited to %2$d." = "Le dossier %1$s est limité à %2$d."
+"Internal Error. FSItem is null." = "Erreur interne. FSItem a la valeur NULL."
+"The original file does not exist." = "Le fichier d'origine n'existe pas."
+"The destination already has an item with the same file name." = "La destination contient déjà un élément portant le même nom de fichier."
+"Internal Error. FSItem is Null." = "Erreur interne. FSItem a la valeur NULL."
+
+
+/* networkviewcontroller.mm */
+"Obtain proxy configuration from" = "Obtenir la configuration du proxy de"
+"System" = "Système"
+"Manual" = "Manuel"
+"Configure proxy settings." = "Configurer les paramètres de proxy."
+"Use HTTP Proxy" = "Utiliser un proxy HTTP"
+"Port:" = "Port :"
+"HTTP Proxy" = "Proxy HTTP"
+"Use FASP Proxy (DNAT)" = "Utiliser le proxy FASP (DNAT)"
+"Secure (DNATS)" = "Sécurisé (DNATS)"
+"FASP Proxy" = "Proxy FASP"
+
+
+/* preferenceswindowcontroller.mm */
+"Preferences" = "Préférences"
+
+
+/* remoteviewcontroller.mm */
+"New folder" = "Nouveau dossier"
+"Server" = "Serveur"
+"Storage type" = "Type de stockage"
+"Storage host" = "Hôte de stockage"
+"Storage path" = "Chemin de stockage"
+"Local inbox directory" = "Répertoire local de la boîte de réception"
+"Sync local directory" = "Synchroniser le répertoire local"
+"Delete Files" = "Supprimer les fichiers"
+"Are you sure you want to permanently delete the selected files?" = "Voulez-vous vraiment supprimer définitivement les fichiers sélectionnés ?"
+"Download has not completed" = "Le téléchargement n'est pas terminé"
+"Create new package" = "Créer un package"
+"Create new folder" = "Créer un dossier"
+
+
+/* syncwrapperqt.mm */
+" Sync" = " Sync"
+"total files and directories" = "fichiers et répertoires au total"
+"Unknown size" = "Taille inconnue"
+"Nothing to sync" = "Rien à synchroniser"
+"Calculating size..." = "Calcul de la taille..."
+"Never started" = "Jamais démarré"
+"%d conflict(s)" = "%d conflit(s)"
+"%d file error(s)" = "%d erreur(s) de fichier"
+"Start file sync" = "Démarrer la synchronisation du fichier"
+"Stop file sync" = "Arrêter la synchronisation du fichier"
+"Warning: %s" = "Avertissment : %s"
+"Current File" = "Fichier en cours"
+"Last File" = "Dernier fichier"
+"%d file(s)" = "%d fichier(s)"
+"Synced" = "Synchronisé"
+"Retrying" = "Nouvelle tentative"
+"Next attempt in %s" = "Nouvelle tentative dans %s"
+"Next sync in %s" = "Prochaine synchronisation dans %s"
+"Checking for changes" = "Recherche de modifications"
+"Downloading" = "Réception par téléchargement"
+"Uploading" = "Envoi par téléchargement"
+"Syncing" = "Synchronisation en cours"
+"%s remaining" = "%s restant"
+
+
+/* transfersviewcontroller.mm */
+"Download Directory" = "Répertoire de téléchargement"
+"Downloads location:" = "Emplacement des téléchargements :"
+"Remove:" = "Supprimer :"
+"Always ask me where to save downloaded files." = "Toujours me demander où sauvegarder les fichiers téléchargés."
+"Browse..." = "Parcourir..."
+"Queue:" = "Mettre en file d'attente :"
+"Enable queuing" = "Activer la mise en file d'attente"
+"Maximum concurrent transfers:" = "Nombre maximal de transferts simultanés :"
+"Retry:" = "Nouvelle tentative :"
+"Automatically retry failed transfers" = "En cas d'échec de transferts, effectuer automatiquement une nouvelle tentative"
+"Attempts:" = "Tentatives :"
+"Interval:" = "Intervalle :"
+"The interval specifies an amount of time that will elapse between each attempt to restart a failed transfer." = "L'intervalle spécifie un délai qui s'écoulera entre chaque nouvelle tentative de redémarrage suite à l'échec d'un transfert."
+"Sync:" = "Synchroniser :"
+"seconds" = "secondes"
+"minutes" = "minutes"
+"hours" = "heures"
+
+
+/* transferwrapper.h */
+"Unlock encrypted files" = "Déverrouiller les fichiers chiffrés"
+
+
+/* transferwrapperqt.mm */
+"Decryption in progress..." = "Déchiffrement en cours..."
+"Decryption finished" = "Déchiffrement achevé"
+"Authenticating..." = "Authentification en cours..."
+"Measuring bandwidth..." = "Mesure de la bande passante en cours..."
+"Retrying in %s" = "Nouvelle tentative dans %s"
+"Stopping..." = "Interruption en cours..."
+"Queued" = "Mis en file d'attente"
+"elapsed" = "écoulées"
+/* The whole string is "Transferring 106 MB / 1.0 GB (20.03 Mbps) - 2:31:48 remaining".
+    since we have "%s remaining" translated, this long string is now splited into two parts:
+    "Transferring 106 MB / 1.0 GB (20.03 Mbps)",
+    "2:31:48 remaining" */
+"Transferring %1$s (%2$s)" = "Transfert de %1$s (%2$s)"
+"Downloading %1$s (%2$s)" = "Réception par téléchargement de %1$s (%2$s)"
+"Uploading %1$s (%2$s)" = "Envoi par téléchargement de %1$s (%2$s)"
+"Done" = "Effectué"
+"Unknown" = "Inconnu"
+"Open containing folder" = "Ouvrir le dossier conteneur"
+"Open transfer monitor" = "Ouvrir le moniteur de transferts"
+"Delete source files on complete" = "Supprimer les fichiers source une fois terminé"
+
+
+/* metadatainputwidget.cpp */
+"Missing required fields: %s" = "Zones obligatoires manquantes : %s"
+
+
+/* networkprefwidget.cpp */
+"Network: HTTP Port is empty. Valid range is 0 to 65535.\n" = "Réseau : la zone Port HTTP est vide. La plage valide se situe entre 0 et 65535.\n"
+"Network: HTTP Port is invalid. Valid range is 0 to 65535.\n" = "Réseau : la zone Port HTTP n'est pas valide. La plage valide se situe entre 0 et 65535.\n"
+"Network: FASP Address is empty.\n" = "Réseau : la zone Adresse FASP est vide.\n"
+"Network: FASP Port is empty. Valid range is 0 to 65535.\n" = "Réseau : la zone Port FASP est vide. La plage valide se situe entre 0 et 65535.\n"
+"Network: FASP Port is invalid. Valid range is 0 to 65535.\n" = "Réseau : la zone Port FASP n'est pas valide. La plage valide se situe entre 0 et 65535.\n"
+"Connect to the Internet via an HTTP proxy." = "Connectez-vous à Internet via un proxy HTTP."
+
+
+/* passphrasewindow.cpp */
+"Protected Content - %s" = "Contenu protégé - %s"
+"Enter a passphrase to decrypt protected files as they are downloaded." = "Entrez une phrase passe pour déchiffrer des fichiers protégés au cours de leur téléchargement."
+"Enter a passphrase to store files in an encrypted format on the server." = "Entrez une phrase passe pour stocker des fichiers sous forme chiffrée sur le serveur."
+"A passphrase is required." = "Vous devez indiquer une phrase passe."
+"Keep files encrypted" = "Laisser les fichiers chiffrés"
+"Keep files unencrypted" = "Laisser les fichiers non chiffrés"
+"Confirm" = "Confirmer"
+"Leave uploaded files unencrypted." = "Laisser les fichiers chargés non chiffrés."
+
+
+/* sendtodialog.cpp */
+"Send Files - " = "Envoyer les fichiers - "
+"Send" = "Envoyer"
+"The following were not added because the same name exists:\n\n" = "Les éléments suivants n'ont pas été ajoutés car le même nom existe déjà :\n\n"
+"Name Conflicts - " = "Conflits de nom - "
+"Dropbox" = "Dropbox"
+"The title cannot contain any of the following characters: %s" = "Le titre ne peut pas contenir l'un des caractères suivants : %s"
+"Package not sent. Account has been deleted." = "Package non envoyé. Le compte a été supprimé."
+"Failed to send package. Could not parse error message from server." = "Échec de l'envoi du package. Impossible d'analyser le message d'erreur à partir du serveur."
+"Failed to send package: " = "Échec de l'envoi du package : "
+"Server error. Failed to send package:\n" = "Erreur liée au serveur. Échec de l'envoi du package :\n"
+"Server error. Failed to send package: " = "Erreur liée au serveur. Échec de l'envoi du package : "
+"Select files" = "Sélectionner les fichiers"
+"Select folder" = "Sélectionner le dossier"
+"The note is cut to fit the maximum length of %d." = "La remarque a été tronquée pour s'adapter à la longueur maximale de %d."
+"Sharing files from location '%s' is not supported." = "Le partage de fichiers à partir de l'emplacement '%s' n'est pas pris en charge."
+"This workspace doesn't allow sending packages to external users." = "Cet espace de travail n'autorise pas l'envoi de packages aux utilisateurs externes."
+"Maximum number of items reached." = "Nombre maximum d'éléments atteints."
+
+
+/* sync2wizarddialog.cpp */
+"Warning:%s\n\nContinue?" = "Avertissement :%s\n\nContinuer ?"
+
+
+/* syncerrordialog.cpp */
+"Share" = "Partager"
+"File" = "Fichier"
+" File Errors" = " Erreurs de fichiers"
+"File Conflict" = "Conflit de fichier"
+"Displaying %1$d of %2$llu errors" = "Affichage de %1$d sur %2$llu erreurs"
+"Remote" = "Distant"
+"Type" = "Type"
+"Message" = "Message"
+" Session Errors" = " Erreurs de session"
+"Warning" = "Avertissement"
+
+
+/* syncitemwidget2.cpp */
+"Continuous Mode" = "Mode continu"
+
+
+/* syncsettingsdialog.cpp */
+"The local sync folder cannot be empty." = "Le dossier de synchronisation local ne peut pas être vide."
+"No remote folders selected." = "Aucun dossier distant sélectionné."
+"Sync settings could not be saved due to the " = "Les paramètres de synchronisation n'ont pas pu être sauvegardés en raison de "
+"You are changing continuous mode.\nThis will also reset sync. Click Yes to continue." = "Vous modifiez le mode continu.\nCela va également réinitialiser la synchronisation. Cliquez sur Oui pour continuer."
+"This will reset your sync history. Click Yes to continue." = "Votre historique de synchronisation va être réinitialisé. Cliquez sur Oui pour continuer."
+"Failed to create directory: %s" = "Échec de la création du répertoire : %s"
+"The local sync folder selected is not empty. Do you want to continue?" = "Le dossier de synchronisation local sélectionné n'est pas vide. Voulez-vous continuer ?"
+
+
+/* syncwidget.cpp */
+"Sync settings" = "Paramètres de synchronisation"
+"File sync" = "Synchronisation de fichiers"
+
+
+/* transfersprefwidget.cpp */
+"Save downloaded files to:" = "Enregistrer les fichiers téléchargés sous :"
+"Browse" = "Parcourir"
+"Queue" = "File d'attente"
+"time(s)" = "fois"
+"Always prompt on delete" = "Toujours demander lors de la suppression"
+
+
+/* transferstatuswidget.cpp */
+"Go to" = "Aller à"
+"Retrying in" = "Nouvelle tentative dans"
+"Resuming..." = "Reprise..."
+"Error: Server refused request" = "Erreur : Le serveur a refusé la demande"
+"Error: Authentication failed" = "Erreur : Échec d'authentification"
+"Transferring" = "Transfert en cours"
+"remaining" = "restant"
+" percent" = " pourcent"
+
+
+/* transferstatuswidgetaccessible.cpp */
+"Use the tab to move through the different actions" = "Utilisez la touche de tabulation pour parcourir les différentes actions"
+
+
+/* transferstatuswidgetcontaineraccessible.cpp */
+"Transfers list" = "Liste des transferts"
+"List with all the current transfers" = "Liste répertoriant tous les transferts en cours"
+"Use the up and down arrows to move through the different transfers" = "Utilisez les flèches haut et bas pour parcourir les différents transferts"
+
+
+/* transferswindow.cpp */
+"Transfers - %s" = "Transferts - %s"
+
+
+/* transferswindowaccessible.cpp */
+"Window with all the transfers" = "Fenêtre contenant tous les transferts"
+"Use the tab to access the transfer list" = "Utilisez la touche de tabulation pour accéder à la liste des transferts"
+
+
+/* trayhandler.cpp */
+"&About..." = "&À propos de..."
+"Ac&tivity" = "Ac&tivité"
+"&Run diagnostic" = "&Exécuter le diagnostic"
+"&Unlock encrypted files" = "&Déverrouiller les fichiers chiffrés"
+"&Quit" = "&Quitter"
+"&Open log folder" = "&Ouvrir le dossier des journaux"
+"&Preferences..." = "&Préférences..."
+"Check &for updates" = "Rechercher &des mises à jour"
+"&Send to..." = "&Envoyer à..."
+"&Unlock Encrypted Files" = "&Déverrouiller les fichiers chiffrés"
+"&Open Log Folder" = "&Ouvrir le dossier des journaux"
+"Check &For Updates" = "Rechercher &des mises à jour"
+"&Send To..." = "&Envoyer à..."
+
+
+/* updateswindow.cpp */
+"Updates - %s" = "Mises à jour - %s"
+"Install Update" = "Installer une mise à jour"
+"Skip This Version" = "Ignorer cette version"
+"Remind Me Later" = "Me le rappeler ultérieurement"
+"Close" = "Fermer"
+"Checking for updates..." = "Vérification des mises à jour..."
+"(Admin privileges required)." = "(Privilèges admin requis)."
+"New version available: %1$s %2$s" = "Nouvelle version disponible : %1$s %2$s"
+"No new updates available." = "Aucune nouvelle mise à jour disponible."
+"Failed to download the update." = "Échec de téléchargement de la mise à jour."
+"Downloading..." = "Téléchargement en cours..."
+"Ready to install. All of your running transfers will be stopped." = "Prêt à installer. Tous vos transferts en cours d'exécution seront arrêtés."
+"Failed to update." = "Mise à jour impossible."
+"Updating..." = "Mise à jour en cours..."
+"Update complete. %s will restart." = "Mise à jour terminée. %s va redémarrer."
+"Update failed: %s" = "Échec de la mise à jour : %s"
+
+
+/* winfiledialoghelper.cpp */
+"Sending remote files is not supported" = "L'envoi de fichiers distants n'est pas pris en charge"
+
+
+/* AboutWindow.cpp */
+"About - IBM Aspera Crypt" = "À propos de - IBM Aspera Crypt"
+"IBM Aspera Crypt" = "IBM Aspera Crypt"
+"\302\251 Copyright IBM Corp. 2009, 2019" = "\302\251 Copyright IBM Corp. 2009, 2019"
+
+
+/* BusyDialog.cpp */
+"Processing..." = "Traitement..."
+
+
+/* DecryptManager.cpp */
+"Task could not be created for %s" = "Impossible de créer la tâche pour %s"
+"Decryption already in progress." = "Le déchiffrement est déjà en cours d'exécution."
+"Cannot perform operations during decryption." = "Impossible d'effectuer des opérations pendant le déchiffrement."
+"Failed list is empty." = "La liste des tâches ayant échoué est vide"
+"Could not remove file %s" = "Impossible de supprimer le fichier %s"
+"Could not remove file %s. file does not exist." = "Impossible de supprimer le fichier %s. Le fichier n'existe pas."
+"Error: could not allocate memory for task %s " = "Erreur : allocation de mémoire impossible pour la tâche %s "
+"Could not rename output %1$s to %2$s" = "Impossible de renommer la sortie %1$s par %2$s"
+"Could not rename input %1$s to %2$s" = "Impossible de renommer l'entrée %1$s par %2$s"
+"Could not remove file %s. Does not exist" = "Impossible de supprimer le fichier %s. Celui-ci n'existe pas"
+
+
+/* FaspDecryptWorker.cpp */
+"Could not write to destination." = "Impossible d'écrire dans la cible."
+"Code:" = "Code :"
+"Input file is corrupted or not encrypted." = "Le fichier d'entrée est endommagé ou non chiffré."
+"Invalid file" = "Fichier non valide"
+"Source file does not exist." = "Le fichier source n'existe pas."
+"Source is not a file." = "La source n'est pas un fichier."
+"Could not initialize decrypter." = "Impossible d'initialiser le déchiffreur."
+"Could not write out to device." = "Impossible d'écrire sur l'appareil."
+"Cancelled by user" = "Annulé par l'utilisateur"
+
+
+/* MainWindow.cpp */
+"Drag files and folders to start decrypting..." = "Faites glisser les fichiers et les dossiers pour commencer le déchiffrement..."
+"Open Encrypted files" = "Ouvrir les fichiers chiffrés"
+"Encrypted Files (*.%s);;All Files (*)" = "Fichiers chiffrés (*.%s);;Tous les fichiers (*)"
+"Open Directory" = "Ouvrir un répertoire"
+"There are current tasks. Do you want to exit?" = "Il y a des tâches en cours. Voulez-vous quitter ?"
+"Do you want to delete encrypted source files from finished tasks?" = "Voulez-vous supprimer les fichiers source chiffrés des tâches terminées ?"
+"   %1$s finished, %2$s failed, %3$s pending, %4$s total" = "   %1$s terminées, %2$s en échec, %3$s en attente, %4$s total"
+"%s task has failed." = "%s tâche a échoué."
+"%s tasks have failed." = "%s tâches ont échoué."
+"Do you want to reload?" = "Voulez-vous recharger ?"
+"Exit" = "Quitter"
+"Open Files" = "Ouvrir des fichiers"
+"Select file(s) to decrypt" = "Sélectionner le(s) fichier(s) à déchiffrer"
+"Decrypt all files and folders in selected folder" = "Déchiffrer tous les fichiers et dossiers du dossier sélectionné"
+"Clear All" = "Tout effacer"
+"Clear all tasks" = "Effacer toutes les tâches"
+"Delete Encrypted" = "Supprimer les fichiers chiffrés"
+"Delete encrypted files from finished tasks" = "Supprimer les fichiers chiffrés des tâches terminées"
+"Clear Finished" = "Supprimer les fichiers terminés"
+"Clear finished tasks" = "Effacer les tâches terminées"
+"Clear Failed" = "Effacer les fichiers ayant échoué"
+"Clear failed tasks" = "Effacer les tâches en échec"
+"Clear Pending" = "Effacer les fichiers en attente"
+"Clear pending tasks" = "Effacer les tâches en attente"
+"Settings" = "Paramètres"
+"Open Settings dialog" = "Ouvrir la boîte de dialogue Paramètres"
+"About..." = "À propos de..."
+"Open About dialog" = "Ouvrir la boîte de dialogue A propos"
+"Reload Failed" = "Recharger les fichiers ayant échoué"
+"Reload failed tasks and resets status to Pending" = "Recharge les tâches en échec et réinitialise le statut sur En attente"
+"Decrypt" = "Déchiffrer"
+"Show passphrase" = "Afficher la phrase passe"
+"View:" = "Afficher :"
+"Latest" = "Le plus récent"
+"Finished" = "Terminé"
+"Failed" = "Échec"
+"Options" = "Options"
+"About" = "À propos de"
+"Enter Passphrase" = "Saisir la phrase secrète"
+
+
+/* SettingsDialog.cpp */
+"Delete encrypted files when finished" = "Supprimer les fichiers chiffrés une fois terminé"
+"1" = "1"
+"2" = "2"
+"4" = "4"
+"8" = "8"
+"Number of concurrent threads for decryption" = "Nombre d'unités d'exécution simultanées pour le déchiffrement"
+
+
+/* Task.cpp */
+"Decrypting" = "Déchiffrement"
+"Waiting" = "En attente"
+"Error %s" = "Erreur %s"
+"Cancelled" = "Annulé"
+"Cleared" = "Effacé"
+"Finished -> %s" = "Terminé -> %s"
+
+
+/* TaskManager.cpp */
+"A task is in progress, try again later." = "une tâche est en cours, réessayez ultérieurement."
+"Loading files..." = "Chargement des fichiers..."
+"Could not open file %1$s, for reading. %2$s" = "Impossible d'ouvrir le fichier %1$s, pour lecture. %2$s"
+"Failed to reload tasks." = "Échec de rechargement des tâches."
+"Reloading failed tasks..." = "Rechargement des tâches ayant échoué..."
+"Failed Tasks reloaded." = "Las tâches ayant échoué ont été rechargées."
+"No files cleared." = "Aucun fichier effacé."
+"Clearing pending tasks..." = "Effacement des tâches en attente..."
+"Could not clear pending tasks." = "Impossible d'effacer les tâches en attente."
+"All pending tasks cleared." = "Toutes les tâches en attente ont été effacées."
+"Clearing failed tasks..." = "Impossible d'effacer les tâches..."
+"Could not clear failed tasks." = "Impossible d'effacer les tâches en échec."
+"All failed tasks cleared." = "Toutes les tâches en échec ont été effacées."
+"Clearing finished tasks..." = "Effacement des tâches terminées..."
+"Could not clear finished tasks." = "Impossible d'effacer les tâches terminées."
+"All finished tasks cleared." = "Toutes les tâches terminées ont été effacées."
+"Clearing all tasks..." = "Effacement de toutes les tâches..."
+"Could not clear all tasks." = "Impossible d'effacer toutes les tâches."
+"All tasks cleared" = "Toutes les tâches ont été effacées"
+"No files cleared for unknown status." = "Aucun fichier effacé avec un statut inconnu."
+"Could not load files." = "Impossible de charger les fichiers."
+"No files found." = "Aucun fichier trouvé."
+"%s file loaded." = "%s fichier chargé."
+"%s files loaded." = "%s fichiers chargés."
+"%s duplicate skipped." = "%s doublon ignoré."
+"%s duplicates skipped." = "%s doublons ignorés."
+"Deleting encrypted source files..." = "Suppression des fichiers source chiffrés..."
+"Encrypted source files deleted from finished tasks." = "Fichiers source chiffrés supprimés des tâches terminées."
+"Not all encrypted files could be deleted." = "Tous les fichiers chiffrés n'ont pas pu être supprimés."
+
+
+/* driveapplication.cpp */
+"Errors occurred while loading the configuration file" = "Des erreurs se sont produites lors du chargement du fichier de configuration"
+"Welcome to %s. Your setup is almost complete. Please enter your account login information." = "Bienvenue dans %s. Votre configuration est presque terminée. Entrez les informations de connexion à votre compte."
+"You have invalid accounts. Would you like to review them?" = "Vous avez des comptes non valides. Voulez-vous les passer en revue ?"
+
+
+/* drivetrayhandler.cpp */
+"1 transfer." = "1 transfert."
+"%d transfers." = "%d transferts."
+"1 inbox." = "1 boîte de réception."
+"%d inboxes." = "%d boîtes de réception."
+"1 sync." = "1 synchronisation."
+"%d syncs." = "%d synchronisations."
+"Active:" = "Actif :"
+
+
+/* driveupdater.cpp */
+"Downloaded package was not signed by %s." = "Le package téléchargé n'a pas été signé par %s."
+"Unable to find installer package: %s" = "Impossible de trouver le package du programme d'installation : %s"
+"Update Cancelled." = "Mise à jour annulée."
+"Mount location not found: %s" = "Emplacement d'installation introuvable : %s"
+"Application bundle could not be located: %s" = "Le bundle d'applications est introuvable : %s"
+"%s is not an app bundle." = "%s n'est pas un bundle d'applications."
+"Failed to execute \"%s\"" = "Échec de l'exécution de \"%s\""
+"Failed to execute %s" = "Échec de l'exécution de %s"
+"Updates are not available for this Operating System." = "Aucune mise à jour n'est disponible pour ce système d'exploitation."
+
+
+/* aspcore_utils.cpp */
+"Path is too long. Max length of %s exceeded." = "Le chemin spécifié est trop long. La longueur maximale de %s a été dépassée."
+"Path ends with /.." = "Le chemin se termine par /..."
+"Path begins with ../" = "Le chemin commence par /.."
+"Path contains /../" = "Le chemin d'accès contient /../"
+"Path is .." = "Le chemin d'accès est .."
+"Illegal string found: \" %s \"." = "Chaîne non autorisée trouvée : \" %s \"."
+
+
+/* statuscode.cpp */
+"Continue" = "Poursuivre"
+"Switching Protocols" = "Protocoles de commutation"
+"Created" = "Créé"
+"Accepted" = "Accepté"
+"Non-Authoritative Information" = "Informations non fiables"
+"No Content" = "Aucun contenu"
+"Reset Content" = "Redéfinir le contenu"
+"Partial Content" = "Contenu partiel"
+"Multiple Choices" = "Choix multiples"
+"Moved Permanently" = "Déplacés définitivement"
+"Found" = "Trouvé"
+"See Other" = "Voir autres"
+"Not Modified" = "Non modifié"
+"Use Proxy" = "Utiliser le proxy"
+"Temporary Redirect" = "Rediriger temporairement"
+"Bad Request" = "Demande incorrecte"
+"Unauthorized" = "Non autorisé"
+"Payment Required" = "Paiement requis"
+"Forbidden" = "Interdit"
+"Not Found" = "Non trouvé"
+"Method Not Allowed" = "Méthode non autorisée"
+"Not Acceptable" = "Non acceptable"
+"Proxy Authentication Required" = "Authentification du proxy requise"
+"Request Timeout" = "Délai d'expiration de la demande"
+"Conflict" = "Conflit"
+"Gone" = "Écoulé"
+"Length Required" = "Longueur requise"
+"Precondition Failed" = "Échec des conditions préalables"
+"Request Entity Too Large" = "Entité de demande trop grande"
+"Request-URI Too Large" = "URI de demande trop grand"
+"Unsupported Media Type" = "Type de média non pris en charge"
+"Requested Range Not Satisfiable" = "Plage requise non réalisable"
+"Expectation Failed" = "Échec de l'attente"
+"Unprocessable Entity" = "Entité intraitable"
+"Internal Server Error" = "Erreur de serveur interne"
+"Not Implemented" = "Non implémenté"
+"Bad Gateway" = "Passerelle incorrecte"
+"Service Unavailable" = "Service non disponible"
+"Gateway Timeout" = "Délai d'expiration de la passerelle"
+"HTTP Version Not Supported" = "Version HTTP non prise en charge"
+"Encryption At Rest Passphrase Required" = "Chiffrement au repos et phrase secrète requise"
+
+
+
+

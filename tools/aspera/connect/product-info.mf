@@ -1,0 +1,6 @@
+<product>
+  <name>Aspera Connect</name>
+  <version>3.9.5.172977</version>
+  <components>
+  </components>
+</product>

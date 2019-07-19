@@ -1,0 +1,4 @@
+2019-07-15 14:56:45.279 [6988-a2392740] LOG register: bin path /home/yyx8671/.aspera/connect/bin/asperaconnect-nmh
+2019-07-15 14:56:45.279 [6988-a2392740] LOG writeManifestFile creating directory: /home/yyx8671/.config/google-chrome/NativeMessagingHosts
+2019-07-15 14:56:45.334 [6988-a2392740] LOG writeManifestFile creating directory: /home/yyx8671/.config/chromium/NativeMessagingHosts
+2019-07-15 14:56:45.355 [6988-a2392740] LOG writeManifestFile creating directory: /home/yyx8671/.mozilla/native-messaging-hosts
