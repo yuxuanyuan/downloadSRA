@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# This script aims to help download SRA file
+# This script aims to help download SRA files
 # ScriptName: downdloadSRA
 # Created date: 19-Jul-2019
 # Last modified: 19-Jul-2019
@@ -112,6 +112,12 @@ if [[ $# -gt 1 ]] && [[ $1 == "ascp" || $1 == "wget" ]]; then
     done
     shift "$((OPTIND - 1))"
 
+    if [[ -z $sra ]] || [[ -z $od ]]; then
+        echo;
+        echo "Some option was missing. Please check '`basename $0` -h' and continue...";
+        echo; exit 1;
+    fi
+
     ##convert to uppercase 
     sra=`echo ${sra} | tr a-z A-Z`;
     F3="${sra:0:3}";
@@ -130,7 +136,8 @@ if [[ $# -gt 1 ]] && [[ $1 == "ascp" || $1 == "wget" ]]; then
     check_path "$od"; 
 
     if [[ $cmd == "ascp" ]]; then
-        $downdloadSRA_path/../tools/aspera/connect/bin/ascp -QT -l200M -i $downdloadSRA_path/../tools/aspera/connect/etc/asperaweb_id_dsa.openssh anonftp@ftp-trace.ncbi.nlm.nih.gov:/sra/sra-instant/reads/ByRun/sra/${F3}/${F6}/${sra}/${sra}.sra ${od}/.
+        $downdloadSRA_path/../tools/aspera/connect/bin/ascp -QT -l200M -i $downdloadSRA_path/../tools/aspera/connect/etc/asperaweb_id_dsa.openssh \
+		anonftp@ftp-trace.ncbi.nlm.nih.gov:/sra/sra-instant/reads/ByRun/sra/${F3}/${F6}/${sra}/${sra}.sra ${od}/.
     else
         wget https://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByRun/sra/${F3}/${F6}/${sra}/${sra}.sra ${od}/.
     fi
