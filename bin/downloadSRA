@@ -5,6 +5,8 @@
 # Created date: 19-Jul-2019
 # Last modified: 19-Jul-2019
 # Note: v1.0 is the initial version
+#       v1.01 check the bad link and try to download from 'sra-download.ncbi.nlm.nih.gov'
+#       v1.02 add the fastq-dump function 
 # Copyright: Copyright (c) 2019 Yuxuan Yuan (yuxuan.yuan@outlook.com)
 
 ####      #### ####      ####  #####         #####  ####      ####        #####          #####       ###
@@ -16,7 +18,7 @@
      #  #       #  #* * *# #     #  #     #   #      # #* * *# #    # #           # #    # #      ## # #
      ####        **********    #####         #####     ********    ###             ###   ###       #####
 
-VERSION=1.0
+VERSION=1.02
 ###======================================= check this tool ==============================================
 
 RL=`which readlink`;
@@ -60,6 +62,8 @@ command: ascp       download using ascp with a high speed
 
 options: -h/-help   show this message
          -i         SRA id, e.g. SRR000001
+         -s         if select ascp, the download speed (Mbp/s). Default is 200
+         -d         dump the sra file to fastq(s) [Y/N]; Default: Y
          -o         output directory 
 "
 }
@@ -70,6 +74,38 @@ check_path(){
         echo; 
         echo "Opps! It seems the output directory is not existent or writable, please check!";
         echo; exit 1;
+    fi
+}
+
+check_tool(){
+    which $1 >/dev/null 2>&1;
+    if [[ $? != 0 ]]; then
+        echo;
+        echo "Opps! '$1' is not in the PATH. Please check!";
+        echo; exit 1;
+    fi
+    mytool=`$RL -f $(which $1)`;
+    if [[ ! -s "$mytool" ]] || [[ ! -x "$mytool" ]]; then
+        echo;
+        echo "Opps! It seems '$1' is not executable. Please check!";
+        echo; exit 1;
+    fi
+}
+
+check_pylib(){
+    pdlib=`python -c "import imp; imp.find_module('$1')" 2>&1 || true`
+    if [[ ! -z "$pdlib" ]]; then
+        echo;
+        echo "Opps! It seems python library '$1' is not installed. Please check!";
+        echo; exit 1;
+    fi
+}
+
+function check_integer () {
+    if ! [[ $1 =~ ^[0-9]+$ ]]; then
+        echo
+        echo "Opps! Your input '$1' is not an integer or smaller than 0. Please check!" 1>&2
+        echo >&2; exit 1
     fi
 }
 
@@ -100,12 +136,14 @@ fi
 if [[ $# -gt 1 ]] && [[ $1 == "ascp" || $1 == "wget" ]]; then 
     cmd=$1;
     shift;
-    options=':hi:o:';
+    options=':hi:s:d:o:';
     while getopts "$options" opt; do
         case "$opt" in 
             h) usage; exit 1;;
             i) sra=${OPTARG};;
+            s) spd=${OPTARG};;
             o) od=${OPTARG};;
+            d) dmp=${OPTARG};;			
             \?) echo;echo -e "Oops! Unknown option '-$OPTARG'">&2; echo "Please check '`basename $0` -h' and continue..."; echo; exit 1;;
             :) echo;echo -e "Missing option argument for '-$OPTARG'. Please check!">&2; echo; exit 1;;
         esac
@@ -122,7 +160,24 @@ if [[ $# -gt 1 ]] && [[ $1 == "ascp" || $1 == "wget" ]]; then
     sra=`echo ${sra} | tr a-z A-Z`;
     F3="${sra:0:3}";
     F6="${sra:0:6}";
+
+    ##check -d
+    if [[ -z ${dmp} ]]; then
+        dmp='Y';
+    else
+        dmp=`echo ${dmp} | tr a-z A-Z`;
+        if [[ ${dmp} != 'Y' ]] && [[ ${dmp} != 'N' ]]; then
+            echo; echo "Please input 'Y' or 'N' when you select '-d' option"; echo; exit 1;
+        fi
+    fi					
     
+    ##check -s
+    if [[ -z ${spd} ]]; then
+        spd=200;
+    fi 
+
+    check_integer "${spd}"
+
     ##Check outDir
     last_chr="${od: -1}"
     if [[ "$last_chr" == "/" ]]; then
@@ -136,11 +191,30 @@ if [[ $# -gt 1 ]] && [[ $1 == "ascp" || $1 == "wget" ]]; then
     check_path "$od"; 
 
     if [[ $cmd == "ascp" ]]; then
-        $downdloadSRA_path/../tools/aspera/connect/bin/ascp -QT -l200M -i $downdloadSRA_path/../tools/aspera/connect/etc/asperaweb_id_dsa.openssh \
+        $downdloadSRA_path/../tools/aspera/connect/bin/ascp -QT -l${spd}M -i $downdloadSRA_path/../tools/aspera/connect/etc/asperaweb_id_dsa.openssh \
 		anonftp@ftp-trace.ncbi.nlm.nih.gov:/sra/sra-instant/reads/ByRun/sra/${F3}/${F6}/${sra}/${sra}.sra ${od}/.
     else
         wget https://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByRun/sra/${F3}/${F6}/${sra}/${sra}.sra ${od}/.
     fi
+
+    if [[ $? != 0 ]]; then
+        echo "Trying to download from 'sra-download.ncbi.nlm.nih.gov' using 'wget' ...";
+        cd ${od};
+        check_tool python; check_pylib requests;
+        python $downdloadSRA_path/../src/getURL.py ${sra} >> ${sra}.src;
+        link=`grep "sra-download" ${sra}.src | cut -d'"' -f2 | head -n 1`;
+        fname=`basename ${link}`;
+        if [[ -z ${link} ]]; then 
+            rm -rf ${sra}.src;				
+            echo; echo "It seems there is no resource for '${sra}'. Please check!"; echo; exit 1;
+        fi
+        wget ${link}; mv ${fname} ${sra}.sra; rm -rf ${sra}.src;
+    fi
+
+    if [[ ${dmp} == 'Y' ]]; then
+        cd $od;			
+        $downdloadSRA_path/../tools/sratoolkit/bin/fastq-dump --split-3 ${sra}.sra;
+    fi		
 fi
 
 ##END SCRIPT
