@@ -201,7 +201,7 @@ if [[ $# -gt 1 ]] && [[ $1 == "ascp" || $1 == "wget" ]]; then
     #    wget https://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByRun/sra/${F3}/${F6}/${sra}/${sra}.sra ${od}/.
     #fi
     
-    #$downdloadSRA_path/../tools/sratoolkit/bin/prefetch -a "$downdloadSRA_path/../tools/aspera/connect/bin/ascp|$downdloadSRA_path/../tools/aspera/connect/etc/asperaweb_id_dsa.openssh" SRR00000001
+    # ${downdloadSRA_path}/../tools/sratoolkit/bin/prefetch -a '${downdloadSRA_path}/../tools/aspera/connect/bin/ascp|${downdloadSRA_path}/../tools/aspera/connect/etc/asperaweb_id_dsa.openssh' ${sra}
 
     cd ${od};
     check_tool python; check_pylib requests;
@@ -215,7 +215,11 @@ if [[ $# -gt 1 ]] && [[ $1 == "ascp" || $1 == "wget" ]]; then
     if [[ $cmd == "ascp" ]]; then
         mylink=`echo $link | cut -d"/" -f4-`
         $downdloadSRA_path/../tools/aspera/connect/bin/ascp -QT -l${spd}M -i $downdloadSRA_path/../tools/aspera/connect/etc/asperaweb_id_dsa.openssh \
-        dbtest@sra-download.ncbi.nlm.nih.gov:data/sracloud/${mylink} .      
+        dbtest@sra-download.ncbi.nlm.nih.gov:data/sracloud/${mylink} . >/dev/null
+        if [[ $? != 0 ]]; then
+            echo -e "\nOops! Currently, we cannot find the correct link for 'ascp'. Now download use 'wget'!\n";
+            wget ${link};
+        fi     
     else
         wget ${link}; 
     fi
