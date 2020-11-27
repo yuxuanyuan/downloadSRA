@@ -51,20 +51,24 @@ fi
 usage(){
 
 echo "
-Program: `basename $0`
-Version: $VERSION
-Author:  Yuxuan Yuan (yuxuan.yuan@outlook.com)
+-----------------------------------------------------------------------------------
+Program:  `basename $0`
+Version:  $VERSION
+Author:   Yuxuan Yuan (yuxuan.yuan@outlook.com)
+-----------------------------------------------------------------------------------
+Synopsis: This script aims to help download NCBI SRA data with an ID
 
-Usage:   `basename $0` <command> [options] 
-
-command: ascp       download using ascp with a high speed 
-         wget       download using wget with a slow speed
-
-options: -h/-help   show this message
-         -i         SRA id, e.g. SRR000001
-         -s         if select ascp, the download speed (Mbp/s). Default is 200
-         -d         dump the sra file to fastq(s) [Y/N]; Default: Y
-         -o         output directory 
+Usage:    `basename $0` <command> [options] 
+---------------------------------------------------------------
+command:  ascp       download using ascp with a high speed 
+          wget       download using wget with a slow speed
+---------------------------------------------------------------
+options:  -h/-help   show this message
+          -i         SRA id, e.g. SRR000001
+          -s         if select ascp, the download speed (Mbp/s). Default is 200
+          -d         dump the sra file to fastq(s) [Y/N]; Default: Y
+          -o         output directory 
+-----------------------------------------------------------------------------------
 "
 }
 
@@ -190,26 +194,36 @@ if [[ $# -gt 1 ]] && [[ $1 == "ascp" || $1 == "wget" ]]; then
     fi
     check_path "$od"; 
 
-    if [[ $cmd == "ascp" ]]; then
-        $downdloadSRA_path/../tools/aspera/connect/bin/ascp -QT -l${spd}M -i $downdloadSRA_path/../tools/aspera/connect/etc/asperaweb_id_dsa.openssh \
-		anonftp@ftp-trace.ncbi.nlm.nih.gov:/sra/sra-instant/reads/ByRun/sra/${F3}/${F6}/${sra}/${sra}.sra ${od}/.
-    else
-        wget https://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByRun/sra/${F3}/${F6}/${sra}/${sra}.sra ${od}/.
-    fi
+    #if [[ $cmd == "ascp" ]]; then
+    #    $downdloadSRA_path/../tools/aspera/connect/bin/ascp -QT -l${spd}M -i $downdloadSRA_path/../tools/aspera/connect/etc/asperaweb_id_dsa.openssh \
+	#	anonftp@ftp-trace.ncbi.nlm.nih.gov:/sra/sra-instant/reads/ByRun/sra/${F3}/${F6}/${sra}/${sra}.sra ${od}/.
+    #else
+    #    wget https://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByRun/sra/${F3}/${F6}/${sra}/${sra}.sra ${od}/.
+    #fi
+    
+    #$downdloadSRA_path/../tools/sratoolkit/bin/prefetch -a "$downdloadSRA_path/../tools/aspera/connect/bin/ascp|$downdloadSRA_path/../tools/aspera/connect/etc/asperaweb_id_dsa.openssh" SRR00000001
 
-    if [[ $? != 0 ]]; then
-        echo "Trying to download from 'sra-download.ncbi.nlm.nih.gov' using 'wget' ...";
-        cd ${od};
-        check_tool python; check_pylib requests;
-        python $downdloadSRA_path/../src/getURL.py ${sra} >> ${sra}.src;
-        link=`grep "sra-download" ${sra}.src | cut -d'"' -f2 | head -n 1`;
-        fname=`basename ${link}`;
-        if [[ -z ${link} ]]; then 
-            rm -rf ${sra}.src;				
-            echo; echo "It seems there is no resource for '${sra}'. Please check!"; echo; exit 1;
-        fi
-        wget ${link}; mv ${fname} ${sra}.sra; rm -rf ${sra}.src;
+    cd ${od};
+    check_tool python; check_pylib requests;
+    python $downdloadSRA_path/../src/getURL.py ${sra} >> ${sra}.src;
+    link=`grep "sra-download" ${sra}.src | cut -d'"' -f2 | head -n 1`;
+    fname=`basename ${link}`;
+    if [[ -z ${link} ]]; then 
+        rm -rf ${sra}.src;				
+        echo; echo "It seems there is no resource for '${sra}'. Please check!"; echo; exit 1;
     fi
+    if [[ $cmd == "ascp" ]]; then
+        mylink=`echo $link | cut -d"/" -f4-`
+        $downdloadSRA_path/../tools/aspera/connect/bin/ascp -QT -l${spd}M -i $downdloadSRA_path/../tools/aspera/connect/etc/asperaweb_id_dsa.openssh \
+        dbtest@sra-download.ncbi.nlm.nih.gov:data/sracloud/${mylink} .      
+    else
+        wget ${link}; 
+    fi
+    if [[ $? != 0 ]]; then
+        echo -e "\nOops! Something is wrong when downloading, please check!\n";
+        exit 1; 
+    fi
+    mv ${fname} ${sra}.sra; rm -rf ${sra}.src;
 
     if [[ ${dmp} == 'Y' ]]; then
         cd $od;			
